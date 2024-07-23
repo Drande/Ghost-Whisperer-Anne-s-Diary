@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadPuzzle() => LoadMinigame(GameScenes.PuzzleAssembly);
     public void LoadMemory() => LoadMinigame(GameScenes.MemoryMatch);
-    public void LoadSimon() => LoadMinigame(GameScenes.Simon);
+    public void LoadSimon() => LoadMinigame(GameScenes.SimonSays);
 
     public void LoadMinigame(string sceneName) {
         try {
