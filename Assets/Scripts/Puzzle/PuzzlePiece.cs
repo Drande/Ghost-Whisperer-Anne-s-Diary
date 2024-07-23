@@ -43,6 +43,7 @@ public class PuzzlePiece : MonoBehaviour
             _isDragging = false;
             transform.position = originalPosition;
             AudioManager.Instance.PlaySFX(dropSfx);
+            if(Camera.main.TryGetComponent<CameraShaker>(out var camManager)) camManager.Shake();
         }
     }
 }
