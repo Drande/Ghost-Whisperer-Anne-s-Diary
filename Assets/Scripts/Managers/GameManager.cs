@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,5 +21,17 @@ public class GameManager : MonoBehaviour
 
     public void BackToTitle() {
         SceneManager.LoadScene(GameScenes.MainMenu);
+    }
+
+    public void LoadPuzzle() => LoadMinigame(GameScenes.PuzzleAssembly);
+    public void LoadMemory() => LoadMinigame(GameScenes.MemoryMatch);
+    public void LoadSimon() => LoadMinigame(GameScenes.Simon);
+
+    public void LoadMinigame(string sceneName) {
+        try {
+            SceneManager.LoadScene(sceneName);
+        } catch(Exception ex) {
+            Debug.LogError("The scene " + sceneName + " could not be loaded: " + ex.Message);
+        }
     }
 }

@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: f1561101f732b354d9fe3e50e5440c89
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Memory Match.unity
+    guid: 9b86d79b0a0880740b2abec0aad77ee4
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Simon.unity
+    guid: 9e7b518dac133ac40abece498c1dbe6f
+  - enabled: 1
+    path: Assets/Scenes/Minigames/Puzzle Assembly.unity
+    guid: 57e450020d6e48e49aa547dd9f899805
   m_configObjects: {}
