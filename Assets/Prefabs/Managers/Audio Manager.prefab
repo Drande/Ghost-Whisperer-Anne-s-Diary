@@ -46,7 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba58611a5ce86b49b9d608aa15f8ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds: []
+  musicSounds:
+  - audioClip: {fileID: 8300000, guid: fc2038f26f8ec6c41aefca070c69cb2a, type: 3}
+    name: HappyMusic
   sfxSounds:
   - audioClip: {fileID: 8300000, guid: ced5194500b65a9489c9d02680bc6908, type: 3}
     name: bad
