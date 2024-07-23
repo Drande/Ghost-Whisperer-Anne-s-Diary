@@ -47,7 +47,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSounds: []
-  sfxSounds: []
+  sfxSounds:
+  - audioClip: {fileID: 8300000, guid: ced5194500b65a9489c9d02680bc6908, type: 3}
+    name: bad
+  - audioClip: {fileID: 8300000, guid: e63fe55b353482d4985b9e9ee0eb9974, type: 3}
+    name: good
+  - audioClip: {fileID: 8300000, guid: 5fdf616dfcbafe34d952039c20149a09, type: 3}
+    name: whisper
+  - audioClip: {fileID: 8300000, guid: b4142e5576baca240b1f7128d8f476d2, type: 3}
+    name: woodenclick
+  - audioClip: {fileID: 8300000, guid: faab09e3cf3e5114e87f8e3966f20fe5, type: 3}
+    name: creepysound1
+  - audioClip: {fileID: 8300000, guid: e751e86dc1a468b44a0581cb5cd09b1a, type: 3}
+    name: clickysound
+  - audioClip: {fileID: 8300000, guid: 084b364571f623242826b8a7ae20c245, type: 3}
+    name: cahossound
+  - audioClip: {fileID: 8300000, guid: fa95872c7cd152b47902267a9b9cb565, type: 3}
+    name: stringsounds
   musicSource: {fileID: 274260404827659225}
   sfxSource: {fileID: 274260406244230466}
 --- !u!1 &274260404827659226
