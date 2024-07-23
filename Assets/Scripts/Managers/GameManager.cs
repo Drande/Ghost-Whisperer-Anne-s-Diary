@@ -19,6 +19,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(GameScenes.Game);
     }
 
+    public void BackToGame() {
+        SceneManager.LoadScene(GameScenes.Game);
+    }
+
     public void BackToTitle() {
         SceneManager.LoadScene(GameScenes.MainMenu);
     }
