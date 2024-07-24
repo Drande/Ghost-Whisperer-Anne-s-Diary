@@ -66,6 +66,16 @@ MonoBehaviour:
     name: cahossound
   - audioClip: {fileID: 8300000, guid: fa95872c7cd152b47902267a9b9cb565, type: 3}
     name: stringsounds
+  - audioClip: {fileID: 8300000, guid: 46cbfe2d78d5a4e42889e16bf827c61c, type: 3}
+    name: bop
+  - audioClip: {fileID: 8300000, guid: 91644fc5c0f055249966ad97ccfd1f1f, type: 3}
+    name: levitatingobject
+  - audioClip: {fileID: 8300000, guid: 6944afa7340ae84418dc97d2ecc50dae, type: 3}
+    name: misterywhistle
+  - audioClip: {fileID: 8300000, guid: ba1b24f20bfad1c48a6648fd41fef346, type: 3}
+    name: dropnotmatch
+  - audioClip: {fileID: 8300000, guid: 2bd72bd99720a434493041940515037e, type: 3}
+    name: clickmatch
   musicSource: {fileID: 274260404827659225}
   sfxSource: {fileID: 274260406244230466}
   masterMixer: {fileID: 24100000, guid: edea291aa456d2c4889dadaf32993097, type: 2}
