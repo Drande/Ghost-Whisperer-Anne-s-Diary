@@ -60,7 +60,7 @@ public class MemoryGameManagerUI : MonoBehaviour
     private IEnumerator OnCompleteGame()
     {
         yield return new WaitForSeconds(0.75f);
-        AudioManager.Instance.PlaySFX(completeGameSfx);
+        //AudioManager.Instance.PlaySFX(completeGameSfx);
         Debug.Log("Has ganado");
     }
 

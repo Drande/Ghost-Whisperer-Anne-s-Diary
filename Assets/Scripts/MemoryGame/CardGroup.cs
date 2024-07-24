@@ -47,7 +47,7 @@ public class CardGroup : MonoBehaviour
         cardSingleUI.Select();
         cardSingleUI.GetCardFrontBackground().sprite = cardActive;
 
-        if ( cardSingleUI.name == "Bread")
+        if ( cardSingleUI.name == "Belt")
         {
             Debug.Log("uh... This card stirs up a painful memory for me."); //Logic to deploy message
         }
@@ -111,11 +111,11 @@ public class CardGroup : MonoBehaviour
             if (cardSingleUI.name != firstCard.name)
             {
                 if (Camera.main.TryGetComponent<CameraShaker>(out var camManager)) camManager.Shake(); //Convert canvas to worldspace for working
-                AudioManager.Instance.PlaySFX(noMatchSfx);
+                //AudioManager.Instance.PlaySFX(noMatchSfx);
                 return false;
             }
         }
-        AudioManager.Instance.PlaySFX(matchSfx);
+        //AudioManager.Instance.PlaySFX(matchSfx);
         return true;
 
     }
