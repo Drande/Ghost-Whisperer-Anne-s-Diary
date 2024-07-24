@@ -12,7 +12,7 @@ public class Character
 
 public class Message
 {
-    public Message(string character, string message, float duration = 5f)
+    public Message(string character, string message, float duration = 3f)
     {
         this.character = character;
         this.message = message;

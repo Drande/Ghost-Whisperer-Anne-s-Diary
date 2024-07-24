@@ -96,14 +96,18 @@ public class GameManager : MonoBehaviour
     }
   
     public void LoadMemory() {
-        if(MessageInScreen.Instance.isActive) return;
-        LoadMinigame(GameScenes.MemoryMatch);
+        if (MessageInScreen.Instance.isActive) return;
+        MessageInScreen.Instance.StartDialog(ChapterTwoDialogs.Start, () => {
+            // TODO: Configurar acciones despues de que termina el dialogo.
+            LoadMinigame(GameScenes.MemoryMatch);
+        });
     }
     public void LoadSimon() {
-        if(MessageInScreen.Instance.isActive) return;
-        LoadMinigame(GameScenes.SimonSays);
+        MessageInScreen.Instance.StartDialog(ChapterThreeDialogs.Start, () => {
+            // TODO: Configurar acciones despues de que termina el dialogo.
+            LoadMinigame(GameScenes.SimonSays);
+        });
     }
-
     public void LoadMinigame(string sceneName) {
         try {
             SceneManager.LoadScene(sceneName);
