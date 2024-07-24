@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b054ab1faf04d49a620d4a54628c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickSfx: 
-  dropSfx: 
+  pickSfx: levitatingobject
+  dropSfx: dropnotmatch

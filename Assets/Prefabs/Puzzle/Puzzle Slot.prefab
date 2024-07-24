@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6618347efba8e5a47ad47df23a573644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  completeSfx: 
+  completeSfx: clickmatch
   puzzlePiecePrefab: {fileID: 0}
   pieceSpawnPoint: {fileID: 0}
