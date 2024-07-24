@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PuzzleManager : MonoBehaviour
 {
-    private int _slotCount;
     private int _placedPieces;
     [SerializeField] private GameObject puzzleParent;
     [SerializeField] private GameObject slotPrefab;
@@ -28,7 +27,6 @@ public class PuzzleManager : MonoBehaviour
 
             // Calculate slot position in the grid
             Vector3 slotPosition = new Vector3(column * slotSize - xOffset, yOffset - row * slotSize, 0);
-            Debug.Log("Slot: " +i + " at position: " + slotPosition);
 
             // Instantiate slot at calculated position
             var slot = Instantiate(slotPrefab, slotPosition + puzzleParent.transform.position, Quaternion.identity, puzzleParent.transform).GetComponent<PuzzleSlot>();
