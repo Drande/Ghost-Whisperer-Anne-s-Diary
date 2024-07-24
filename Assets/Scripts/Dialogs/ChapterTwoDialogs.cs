@@ -1,5 +1,5 @@
 public static class ChapterTwoDialogs {
-    //Llamar después del chapter 2, antes del minijuego, este dialogo da paso al minijuego.
+    //Llamar después de la pantalla chapter 2, antes del minijuego, este dialogo da paso al minijuego.
     public static Message[] Start = new Message[] 
     {
         new Message(CharacterNames.Rob, "Who the hell is there? I can hear you..."),

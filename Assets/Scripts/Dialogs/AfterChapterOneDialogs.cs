@@ -1,6 +1,6 @@
 public static class AfterChapterOneDialogs
 {
-    // Llamar después de la pantalla del pasar el minijuego y antes de pasar a la pantalla del segundo capítulo.
+    // Llamar después de pasar el minijuego y antes de pasar a la pantalla del segundo capítulo.
     public static Message[] Start = new Message[]
     {
         new Message(CharacterNames.Emma, "So... they didn't leave me."),
@@ -10,6 +10,6 @@ public static class AfterChapterOneDialogs
         new Message(CharacterNames.Emma, "I will. Goodbye, Anne."),
         new Message(CharacterNames.Anne, "Goodbye, Emma."),
         
-        //ir a la pantalla del segundo capitulo
+        //Mostrar el periodico que dice que estaba perdida pero la estaban buscando desesperadamente sus padres
     };
 }
