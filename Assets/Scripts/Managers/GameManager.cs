@@ -82,22 +82,27 @@ public class GameManager : MonoBehaviour
     }
 
     public void BackToTitle() {
+        MessageInScreen.Instance.Stop();
         SceneManager.LoadScene(GameScenes.MainMenu);
     }
 
     public void LoadPuzzle() 
     {
+        if(MessageInScreen.Instance.isActive) return;
         MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
             // TODO: Configurar acciones despues de que termina el dialogo.
             LoadMinigame(GameScenes.PuzzleAssembly);
-            Debug.Log("Termino el dialogo");
         });
-        
-    
     }
   
-    public void LoadMemory() => LoadMinigame(GameScenes.MemoryMatch);
-    public void LoadSimon() => LoadMinigame(GameScenes.SimonSays);
+    public void LoadMemory() {
+        if(MessageInScreen.Instance.isActive) return;
+        LoadMinigame(GameScenes.MemoryMatch);
+    }
+    public void LoadSimon() {
+        if(MessageInScreen.Instance.isActive) return;
+        LoadMinigame(GameScenes.SimonSays);
+    }
 
     public void LoadMinigame(string sceneName) {
         try {

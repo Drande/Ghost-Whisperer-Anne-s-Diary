@@ -33,6 +33,7 @@ public class MessageInScreen : MonoBehaviour
     [SerializeField] private GameObject messageElement;
     [SerializeField] private Image characterImage;
     [SerializeField] private TMP_Text characterText;
+    [HideInInspector] public bool isActive => messageElement.activeInHierarchy;
 
     private void Awake()
     {
@@ -45,6 +46,11 @@ public class MessageInScreen : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void Stop() {
+        StopAllCoroutines();
+        messageElement.SetActive(false);
     }
 
     public void SendMessage(Message message)
@@ -65,6 +71,7 @@ public class MessageInScreen : MonoBehaviour
     {
         StartCoroutine(DialogCooldown(messages, onComplete));
     }
+
     private System.Collections.IEnumerator DialogCooldown(Message[] messages, System.Action onComplete)
     {
         messageElement.SetActive(true);
