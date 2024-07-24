@@ -68,6 +68,7 @@ MonoBehaviour:
     name: stringsounds
   musicSource: {fileID: 274260404827659225}
   sfxSource: {fileID: 274260406244230466}
+  masterMixer: {fileID: 24100000, guid: edea291aa456d2c4889dadaf32993097, type: 2}
 --- !u!1 &274260404827659226
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,9 +110,9 @@ AudioSource:
   m_GameObject: {fileID: 274260404827659226}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1444087391195155106, guid: edea291aa456d2c4889dadaf32993097, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -237,9 +238,9 @@ AudioSource:
   m_GameObject: {fileID: 274260406244230467}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -6734871226213644268, guid: edea291aa456d2c4889dadaf32993097, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
