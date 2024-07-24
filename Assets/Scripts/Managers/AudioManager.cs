@@ -13,6 +13,9 @@ public class AudioManager : MonoBehaviour
     private const string MusicVolumeKey = "MusicVolume";
     private const string SfxVolumeKey = "SfxVolume";
     private const string MasterVolumeKey = "MasterVolume";
+    public bool isMuted => MasterVolume == 0f;
+    public delegate void MuteStateChanged(bool isMuted);
+    public event MuteStateChanged OnMuteStateChanged;
 
     private void Awake()
     {
@@ -30,6 +33,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         ApplySettings();
+        OnMuteStateChanged?.Invoke(isMuted);
         HandleSceneChange(SceneManager.GetActiveScene());
         SceneManager.activeSceneChanged += (previous, current) =>
         {
@@ -74,13 +78,21 @@ public class AudioManager : MonoBehaviour
             PlayerPrefs.SetFloat(MasterVolumeKey, value);
             PlayerPrefs.Save();
             SetMasterVolume(value);
+            OnMuteStateChanged?.Invoke(value == 0f);
         }
+    }
+
+    public void SubscribeToMuteStateChanged(MuteStateChanged handler)
+    {
+        OnMuteStateChanged += handler;
+        // Immediately invoke the handler with the current state
+        handler?.Invoke(isMuted);
     }
 
     public void ToggleMute()
     {
         if(masterMixer.GetFloat(MasterVolumeKey, out var volume)) {
-            MasterVolume = volume == 0f ? 0f : 1f;
+            Instance.MasterVolume = volume == 0f ? 0f : 1f;
         }
     }
 
