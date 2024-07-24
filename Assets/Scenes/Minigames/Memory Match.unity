@@ -217,14 +217,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Memory Game
       objectReference: {fileID: 0}
+    - target: {fileID: 4445949053264625719, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445949053264625719, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5858036521851991945, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 9615a0dff523dbe48b57dd6f961c360e, type: 3}
+    - target: {fileID: 5858036521851991945, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6573579624492644812, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 9615a0dff523dbe48b57dd6f961c360e, type: 3}
+    - target: {fileID: 6573579624492644812, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7158071285312373262, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
       propertyPath: cardIdle
       value: 
@@ -301,7 +317,8 @@ PrefabInstance:
       propertyPath: cardList.Array.data[7].cardImage
       value: 
       objectReference: {fileID: 21300000, guid: 5e28ab54cdc325247b5ea9fa81f38210, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7715237208272356246, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
 --- !u!224 &849510346 stripped
 RectTransform:
@@ -644,6 +661,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1998420849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1027830576988150549, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
+  m_PrefabInstance: {fileID: 380963729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1998420854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998420849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 135, y: 240}
+  m_Spacing: {x: 30, y: 10}
+  m_Constraint: 1
+  m_ConstraintCount: 4
 --- !u!114 &2016213441 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4316858288460367668, guid: 51b200637d521c04eaec2fc3cb107082, type: 3}
