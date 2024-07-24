@@ -11,6 +11,8 @@ public class MemoryGameManagerUI : MonoBehaviour
     [SerializeField] private List<CardSingleUI> cardSingleUIList = new List<CardSingleUI>();
     [SerializeField] private GameObject gameArea;
 
+    [SerializeField] private string completeGameSfx;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -58,6 +60,7 @@ public class MemoryGameManagerUI : MonoBehaviour
     private IEnumerator OnCompleteGame()
     {
         yield return new WaitForSeconds(0.75f);
+        AudioManager.Instance.PlaySFX(completeGameSfx);
         Debug.Log("Has ganado");
     }
 

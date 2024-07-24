@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardSingleUIList: []
   selectedCardList: []
-  cardIdle: {fileID: 0}
+  cardIdle: {fileID: 21300000, guid: 9e96d29334d02a64b8e7e86ea1981a85, type: 3}
   cardActive: {fileID: 21300000, guid: 9e96d29334d02a64b8e7e86ea1981a85, type: 3}
 --- !u!114 &7715237208272356247
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   fitType: 4
   rows: 0
   columns: 4
-  cellSize: {x: 405.02582, y: NaN}
+  cellSize: {x: 183.25, y: NaN}
   spacing: {x: 0, y: 0}
   fitX: 1
   fitY: 1

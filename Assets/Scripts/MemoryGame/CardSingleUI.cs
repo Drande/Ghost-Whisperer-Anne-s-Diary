@@ -25,6 +25,8 @@ public class CardSingleUI : MonoBehaviour
     [SerializeField] private float duration = 0.25f;
     private Tweener[] tweener = new Tweener[3];
 
+    
+
     private void Awake()
     {
         if (cardGroup == null)
