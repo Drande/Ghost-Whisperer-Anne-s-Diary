@@ -19,7 +19,7 @@ public class Message
         this.duration = duration;
     }
 
-    public string character { get; set; } = CharacterNames.Anne;
+    public string character { get; set; } = CharacterNames.Rob;
     public string message { get; set; }
     public float duration { get; set; }
 }
@@ -101,7 +101,7 @@ public class MessageInScreen : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Character not found in the list!");
+            Debug.LogWarning("Character not found in the list! " + characterName);
         }
     }
 
