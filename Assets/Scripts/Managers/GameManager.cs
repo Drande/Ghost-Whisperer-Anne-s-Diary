@@ -15,6 +15,36 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start() {
+        HandleSceneChange(SceneManager.GetActiveScene());
+        SceneManager.activeSceneChanged += (previous, current) =>
+        {
+            HandleSceneChange(current);
+        };
+    }
+
+    private void HandleSceneChange(Scene scene)
+    {
+        switch (scene.name)
+        {
+            case GameScenes.Game:
+                MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
+                    // TODO: Configurar acciones despues de que termina el dialogo.
+                    Debug.Log("Termino el dialogo");
+                });
+            break;
+            case GameScenes.PuzzleAssembly:
+            break;
+            case GameScenes.MemoryMatch:
+            break;
+            case GameScenes.SimonSays:
+            break;
+            
+            default:
+                break;
+        }
+    }
+
     public void StartGame() {
         SceneManager.LoadScene(GameScenes.Game);
     }
