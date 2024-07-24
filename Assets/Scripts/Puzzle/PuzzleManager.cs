@@ -21,6 +21,6 @@ public class PuzzleManager : MonoBehaviour
     }
 
     private void OnPuzzleCompleted() {
-        GameManager.Instance.BackToGame();
+        GameManager.Instance.BackToGame(true);
     }
 }

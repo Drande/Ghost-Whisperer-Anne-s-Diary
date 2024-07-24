@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07ae1156618907409e36ce50971b31e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  chapterPrefabs:
+  - {fileID: 8727950383249082118, guid: dfda5cc05e078f84798cacddeb2dc3d6, type: 3}
+  - {fileID: 8727950383249082118, guid: abb9b2fc6a9574a468c097a9dd2339ce, type: 3}
+  - {fileID: 8727950383249082118, guid: 49caa17ce0ba06843ac1f4911a22e0e5, type: 3}

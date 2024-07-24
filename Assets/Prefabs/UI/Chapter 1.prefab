@@ -650,7 +650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7327982957153659957, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartGame
+      value: LoadPuzzle
       objectReference: {fileID: 0}
     - target: {fileID: 7327982957153659957, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -788,7 +788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7327982957153659957, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartGame
+      value: BackToTitle
       objectReference: {fileID: 0}
     - target: {fileID: 7327982957153659957, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

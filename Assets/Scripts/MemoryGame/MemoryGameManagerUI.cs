@@ -61,7 +61,7 @@ public class MemoryGameManagerUI : MonoBehaviour
     {
         yield return new WaitForSeconds(0.75f);
         //AudioManager.Instance.PlaySFX(completeGameSfx);
-        Debug.Log("Has ganado");
+        GameManager.Instance.BackToGame(true);
     }
 
     public void Restart()

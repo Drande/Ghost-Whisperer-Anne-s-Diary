@@ -34,7 +34,7 @@ public class SimonSaysManager : MonoBehaviour
     }
 
     private void HandleWin() {
-        GameManager.Instance.BackToGame();
+        GameManager.Instance.BackToGame(true);
     }
 
     IEnumerator ShowSequence()

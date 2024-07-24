@@ -5,6 +5,20 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    [SerializeField] private GameObject[] chapterPrefabs;
+    private const string CurrentChapterKey = "CurrentChapter";
+    private int currentChapter = 0;
+
+    public void SaveChapter(int value)
+    {
+        PlayerPrefs.SetInt(CurrentChapterKey, value);
+        PlayerPrefs.Save();
+    }
+
+    public void LoadIntegerForCurrentScene()
+    {
+        currentChapter = PlayerPrefs.GetInt(CurrentChapterKey, 0);
+    }
 
     private void Awake() {
         if(Instance == null) {
@@ -27,12 +41,14 @@ public class GameManager : MonoBehaviour
     {
         switch (scene.name)
         {
-            //case GameScenes.Game:
-            //    MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
-            //        // TODO: Configurar acciones despues de que termina el dialogo.
-            //        Debug.Log("Termino el dialogo");
-            //    });
-            //break;
+            case GameScenes.Game:
+                LoadIntegerForCurrentScene();
+                HandleCurrentChapter();
+                // MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
+                //     // TODO: Configurar acciones despues de que termina el dialogo.
+                //     Debug.Log("Termino el dialogo");
+                // });
+            break;
             case GameScenes.PuzzleAssembly:
             break;
             case GameScenes.MemoryMatch:
@@ -44,12 +60,24 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
+    
+    private void HandleCurrentChapter() {
+        if(currentChapter < chapterPrefabs.Length) {
+            Instantiate(chapterPrefabs[currentChapter]);
+        }
+    }
 
     public void StartGame() {
+        SaveChapter(0);
         SceneManager.LoadScene(GameScenes.Game);
     }
 
-    public void BackToGame() {
+    public void ContinueGame() {
+        SceneManager.LoadScene(GameScenes.Game);
+    }
+
+    public void BackToGame(bool completed = false) {
+        if(completed) { SaveChapter(currentChapter + 1); }
         SceneManager.LoadScene(GameScenes.Game);
     }
 
