@@ -9,8 +9,10 @@ public class PuzzleSlot : MonoBehaviour
     public event OnPlaced OnPlaced;
 
     private void Awake() {
-        var piece = Instantiate(puzzlePiecePrefab, pieceSpawnPoint.position, Quaternion.identity);
-        piece.Init(this);
+        if(puzzlePiecePrefab) {
+            var piece = Instantiate(puzzlePiecePrefab, pieceSpawnPoint.position, Quaternion.identity);
+            piece.Init(this);
+        }
     }
 
     public void Placed() {
