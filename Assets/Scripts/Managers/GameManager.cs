@@ -27,12 +27,12 @@ public class GameManager : MonoBehaviour
     {
         switch (scene.name)
         {
-            case GameScenes.Game:
-                MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
-                    // TODO: Configurar acciones despues de que termina el dialogo.
-                    Debug.Log("Termino el dialogo");
-                });
-            break;
+            //case GameScenes.Game:
+            //    MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
+            //        // TODO: Configurar acciones despues de que termina el dialogo.
+            //        Debug.Log("Termino el dialogo");
+            //    });
+            //break;
             case GameScenes.PuzzleAssembly:
             break;
             case GameScenes.MemoryMatch:
@@ -57,7 +57,17 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(GameScenes.MainMenu);
     }
 
-    public void LoadPuzzle() => LoadMinigame(GameScenes.PuzzleAssembly);
+    public void LoadPuzzle() 
+    {
+        MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
+            // TODO: Configurar acciones despues de que termina el dialogo.
+            LoadMinigame(GameScenes.PuzzleAssembly);
+            Debug.Log("Termino el dialogo");
+        });
+        
+    
+    }
+  
     public void LoadMemory() => LoadMinigame(GameScenes.MemoryMatch);
     public void LoadSimon() => LoadMinigame(GameScenes.SimonSays);
 
