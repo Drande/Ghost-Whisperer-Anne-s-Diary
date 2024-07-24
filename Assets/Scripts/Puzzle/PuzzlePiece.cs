@@ -4,7 +4,7 @@ public class PuzzlePiece : MonoBehaviour
 {
     [SerializeField] private string pickSfx, dropSfx;
     private Vector3 originalPosition;
-    private float placeThreshold = 1f;
+    private float placeThreshold = 0.5f;
     private bool _isDragging;
     private bool _isPlaced;
     private Vector2 offset;
@@ -35,7 +35,6 @@ public class PuzzlePiece : MonoBehaviour
     }
 
     private void OnMouseUp() {
-        Debug.Log("Got distance: " + (transform.position - _slot.transform.position).magnitude);
         if(((Vector2)(transform.position - _slot.transform.position)).magnitude <= placeThreshold) {
             transform.position = _slot.transform.position;
             _isPlaced = true;
