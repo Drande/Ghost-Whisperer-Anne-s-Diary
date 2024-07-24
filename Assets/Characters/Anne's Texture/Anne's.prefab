@@ -87,14 +87,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anne
       objectReference: {fileID: 0}
-    - target: {fileID: 8088417975647977391, guid: aa2a2c2c0e2e149da9fb2d513c45b601, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: c4235cb42d5c74f20b7d4ba0dbd62d9b, type: 2}
-    - target: {fileID: 8088417975647977391, guid: aa2a2c2c0e2e149da9fb2d513c45b601, type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa2a2c2c0e2e149da9fb2d513c45b601, type: 3}
 --- !u!4 &8791654166802707814 stripped

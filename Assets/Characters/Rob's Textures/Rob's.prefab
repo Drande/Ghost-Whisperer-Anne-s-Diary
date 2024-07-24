@@ -87,8 +87,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rob
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6015812234152611925, guid: e7103b8a5b9f84e4e8699938d3bdd66b, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7103b8a5b9f84e4e8699938d3bdd66b, type: 3}
 --- !u!4 &637432243834748373 stripped
 Transform:
