@@ -7,17 +7,19 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     [SerializeField] private GameObject[] chapterPrefabs;
     private const string CurrentChapterKey = "CurrentChapter";
-    private int currentChapter = 0;
+    public int currentChapter { get; private set; }
+    public event Action onChapterLoaded;
 
-    public void SaveChapter(int value)
+    private void SaveChapter(int value)
     {
         PlayerPrefs.SetInt(CurrentChapterKey, value);
         PlayerPrefs.Save();
     }
 
-    public void LoadIntegerForCurrentScene()
+    private void LoadIntegerForCurrentScene()
     {
         currentChapter = PlayerPrefs.GetInt(CurrentChapterKey, 0);
+        onChapterLoaded?.Invoke();
     }
 
     private void Awake() {
@@ -44,10 +46,6 @@ public class GameManager : MonoBehaviour
             case GameScenes.Game:
                 LoadIntegerForCurrentScene();
                 HandleCurrentChapter();
-                // MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
-                //     // TODO: Configurar acciones despues de que termina el dialogo.
-                //     Debug.Log("Termino el dialogo");
-                // });
             break;
             case GameScenes.PuzzleAssembly:
             break;
@@ -55,7 +53,6 @@ public class GameManager : MonoBehaviour
             break;
             case GameScenes.SimonSays:
             break;
-            
             default:
                 break;
         }
@@ -94,7 +91,6 @@ public class GameManager : MonoBehaviour
     {
         if(MessageInScreen.Instance.isActive) return;
         MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
-            // TODO: Configurar acciones despues de que termina el dialogo.
             LoadMinigame(GameScenes.PuzzleAssembly);
         });
     }
@@ -102,14 +98,12 @@ public class GameManager : MonoBehaviour
     public void LoadMemory() {
         if (MessageInScreen.Instance.isActive) return;
         MessageInScreen.Instance.StartDialog(ChapterTwoDialogs.Start, () => {
-            // TODO: Configurar acciones despues de que termina el dialogo.
             LoadMinigame(GameScenes.MemoryMatch);
         });
     }
 
     public void LoadSimon() {
         MessageInScreen.Instance.StartDialog(ChapterThreeDialogs.Start, () => {
-            // TODO: Configurar acciones despues de que termina el dialogo.
             LoadMinigame(GameScenes.SimonSays);
         });
     }

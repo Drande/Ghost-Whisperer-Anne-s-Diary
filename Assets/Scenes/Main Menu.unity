@@ -219,6 +219,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c2653201ad32c2408099af26ff1e179, type: 3}
+--- !u!1 &107557122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4773607508174610927, guid: e9dd37fd7d9cef14098e89f3fc86ccf7, type: 3}
+  m_PrefabInstance: {fileID: 571812913}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &295912584
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +303,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2063163937, guid: e9dd37fd7d9cef14098e89f3fc86ccf7, type: 3}
+      propertyPath: continueButton
+      value: 
+      objectReference: {fileID: 107557122}
     - target: {fileID: 809361227192767567, guid: e9dd37fd7d9cef14098e89f3fc86ccf7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
