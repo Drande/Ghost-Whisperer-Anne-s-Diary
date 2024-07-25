@@ -26,5 +26,3 @@ public static class ChapterTwoDialogs
         // Empezar minijuego
     };
 }
-
-}
