@@ -483,6 +483,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -4603228481500122511, guid: ae2aa26c3cb5c4cf28dd1792deab554c, type: 2}
     value: {fileID: 29434009}
+  - key: {fileID: 70505534269301411, guid: ae2aa26c3cb5c4cf28dd1792deab554c, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &29434011
@@ -39336,7 +39338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1992937893
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39354,7 +39356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -166}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1992937894
@@ -39410,8 +39412,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In the midst of a snowy winter\u2026\r\nNestled within this serene landscape\u2026\r\nStands
-    a modest home\u2026\r\nSurrounded by snow-covered trees\u2026"
+  m_text: 'In the midst of a snowy winter
+
+    Nestled within this serene landscape'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -40687,7 +40690,7 @@ RectTransform:
   m_Children:
   - {fileID: 1992937893}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

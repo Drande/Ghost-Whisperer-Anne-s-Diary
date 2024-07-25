@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightMaterial: {fileID: 2100000, guid: fb276041f4776ba4ca924be1e46d1148, type: 2}
-  highlightSfx: 
+  highlightSfx: sol_stretched
 --- !u!1001 &797867717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37b05f16ffc30c4881db3bc04d64644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRounds: 1
+  maxRounds: 6
   highlightDelay: 0.5
   roundDelay: 2
 --- !u!1001 &957923752
@@ -650,6 +650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minigame UI
       objectReference: {fileID: 0}
+    - target: {fileID: 4644746534866255529, guid: c9f4fba83b9adc043ac3a1f5cfee1e4f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e8b5513bb9562fc4ab11681601b6d24e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9f4fba83b9adc043ac3a1f5cfee1e4f, type: 3}
 --- !u!1001 &1027643877
@@ -761,7 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightMaterial: {fileID: 2100000, guid: c7b5ee6d805865f4d87c945585777026, type: 2}
-  highlightSfx: 
+  highlightSfx: mi_stretched
 --- !u!1001 &1105903515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -871,7 +875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightMaterial: {fileID: 2100000, guid: fb276041f4776ba4ca924be1e46d1148, type: 2}
-  highlightSfx: 
+  highlightSfx: do_stretched
 --- !u!1001 &1428930496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1152,7 +1156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightMaterial: {fileID: 2100000, guid: 13dcb46a756acb54487e0e6e6ad96506, type: 2}
-  highlightSfx: 
+  highlightSfx: re_stretched
 --- !u!1001 &1785389051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1319,7 +1323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightMaterial: {fileID: 2100000, guid: c7b5ee6d805865f4d87c945585777026, type: 2}
-  highlightSfx: 
+  highlightSfx: fa_stretched
 --- !u!1001 &1212306334511961558
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -417,7 +417,7 @@ MonoBehaviour:
   m_Version: 3
   m_AnimClip: {fileID: 0}
   m_Locked: 0
-  m_Muted: 0
+  m_Muted: 1
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
   m_Parent: {fileID: 11400000}
@@ -427,7 +427,7 @@ MonoBehaviour:
     m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 277389324009759415}
-    m_Duration: 9.484309002989903
+    m_Duration: 21.45
     m_TimeScale: 1
     m_ParentTrack: {fileID: 70505534269301411}
     m_EaseInDuration: 0
@@ -530,7 +530,7 @@ MonoBehaviour:
   m_UseTrackMatchFields: 1
   m_MatchTargetFields: 63
   m_RemoveStartOffset: 1
-  m_ApplyFootIK: 1
+  m_ApplyFootIK: 0
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
@@ -573,10 +573,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 1
+    m_Start: 0
     m_ClipIn: 0
     m_Asset: {fileID: 3131473683456212408}
-    m_Duration: 15.40798185941043
+    m_Duration: 16.566666666666666
     m_TimeScale: 1
     m_ParentTrack: {fileID: 7783137567150270161}
     m_EaseInDuration: 0

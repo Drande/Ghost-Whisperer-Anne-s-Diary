@@ -31,7 +31,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 9.983334
+    m_StopTime: 16.1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -53,16 +53,29 @@ AnimationClip:
   m_Events:
   - time: 0
     functionName: ChangeText
-    data: "In the midst of a snowy winter\u2026 Nestled within this serene landscape\u2026
-      Stands a modest home\u2026 Surrounded by snow-covered trees\u2026"
+    data: In the midst of a snowy winter Nestled within this serene landscape
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 9.983334
+  - time: 5.983333
     functionName: ChangeText
-    data: "It's a place of warmth and history\u2026 Where stories of old merge with
-      the present\u2026 Welcome to Anne's story\u2026"
+    data: Stands a modest home Surrounded by snow-covered trees
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 11.016666
+    functionName: ChangeText
+    data: It's a place of warmth and history Where stories of old merge with the
+      present
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 16.1
+    functionName: ChangeText
+    data: Welcome to Anne's story!
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
