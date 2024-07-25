@@ -78,6 +78,38 @@ MonoBehaviour:
     name: dropnotmatch
   - audioClip: {fileID: 8300000, guid: 2bd72bd99720a434493041940515037e, type: 3}
     name: clickmatch
+  - audioClip: {fileID: 8300000, guid: b1ac384cd7e7ad14882a3bc08d858a1d, type: 3}
+    name: do
+  - audioClip: {fileID: 8300000, guid: 1160b372db35aae41abef9d67d7fb981, type: 3}
+    name: fa
+  - audioClip: {fileID: 8300000, guid: 8361c3528e3dd624ba1f0f5f6aaba8a8, type: 3}
+    name: la
+  - audioClip: {fileID: 8300000, guid: 876fa25970c00154d989bffe4ce26135, type: 3}
+    name: mi
+  - audioClip: {fileID: 8300000, guid: d91fb61cd8da2c4418bf76c5037996b4, type: 3}
+    name: re
+  - audioClip: {fileID: 8300000, guid: 44dfea26594f7bc40999e48c0f5d9e74, type: 3}
+    name: si
+  - audioClip: {fileID: 8300000, guid: 33a785001493ed642946fe41da308f8e, type: 3}
+    name: sol
+  - audioClip: {fileID: 8300000, guid: 09d5f17313ee9634ab51d2ca08947e31, type: 3}
+    name: do_octave
+  - audioClip: {fileID: 8300000, guid: 3027ec64f0db11842ab651a24b393b11, type: 3}
+    name: do_stretched
+  - audioClip: {fileID: 8300000, guid: 36432e829ce51dd45bca0f9d3a472ded, type: 3}
+    name: do_stretched_octave
+  - audioClip: {fileID: 8300000, guid: 1a02bb0a49db5f84e9f5d7dd7f3cf04a, type: 3}
+    name: fa_stretched
+  - audioClip: {fileID: 8300000, guid: febfde081a2d59846aee3a3c103a55e9, type: 3}
+    name: la_stretched
+  - audioClip: {fileID: 8300000, guid: d104511a61fcfe64faea0c40110e190f, type: 3}
+    name: mi_stretched
+  - audioClip: {fileID: 8300000, guid: e18abeefbf9a5144fb809c6447562f2b, type: 3}
+    name: re_stretched
+  - audioClip: {fileID: 8300000, guid: 5f18b686a451f0445b36975dbfbbf462, type: 3}
+    name: si_stretched
+  - audioClip: {fileID: 8300000, guid: 06e31996889c33b42b0945622dc29be2, type: 3}
+    name: sol_stretched
   musicSource: {fileID: 274260404827659225}
   sfxSource: {fileID: 274260406244230466}
   masterMixer: {fileID: 24100000, guid: edea291aa456d2c4889dadaf32993097, type: 2}
