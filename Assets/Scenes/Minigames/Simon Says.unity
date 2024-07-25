@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c37b05f16ffc30c4881db3bc04d64644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRounds: 6
+  maxRounds: 1
   highlightDelay: 0.5
   roundDelay: 2
 --- !u!1001 &957923752
