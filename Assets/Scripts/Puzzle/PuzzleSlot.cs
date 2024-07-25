@@ -17,7 +17,7 @@ public class PuzzleSlot : MonoBehaviour
 
     public void Placed() {
         AudioManager.Instance.PlaySFX(completeSfx);
-        OnPlaced.Invoke();
+        OnPlaced?.Invoke();
         OnPlaced = null;
     }
 }
