@@ -33,6 +33,8 @@ public class MessageInScreen : MonoBehaviour
     [SerializeField] private GameObject messageElement;
     [SerializeField] private Image characterImage;
     [SerializeField] private TMP_Text characterText;
+    [SerializeField] private TMP_Text characterNameTM;
+
     [HideInInspector] public bool isActive => messageElement.activeInHierarchy;
 
     private void Awake()
@@ -63,6 +65,7 @@ public class MessageInScreen : MonoBehaviour
         // Update the character image and text when properties are changed in the Inspector
         UpdateCharacterImage(character);
         UpdateCharacterText(message);
+        UpdateCharacterNameTM(character);
         messageElement.SetActive(true);
         StartCoroutine(MessageCooldown());
     }
@@ -79,6 +82,7 @@ public class MessageInScreen : MonoBehaviour
         {
             UpdateCharacterImage(message.character);
             UpdateCharacterText(message.message);
+            UpdateCharacterNameTM(message.character); 
             yield return new WaitForSeconds(message.duration);
         }
         messageElement.SetActive(false);
@@ -108,5 +112,9 @@ public class MessageInScreen : MonoBehaviour
     private void UpdateCharacterText(string message)
     {
         characterText.text = message;
+    }
+    private void UpdateCharacterNameTM(string characterName)
+    {
+        characterNameTM.text = CharacterNames.GetRealName(characterName);
     }
 }
