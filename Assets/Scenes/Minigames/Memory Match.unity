@@ -467,7 +467,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.6399964, g: 0.8867924, b: 0.85457397, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -870,5 +870,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Music
       objectReference: {fileID: 0}
+    - target: {fileID: 3952313734832337891, guid: 796aefdc2636a5945b31db36d37d96f6, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1c09f9f201382524c82b09c56b12c32b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 796aefdc2636a5945b31db36d37d96f6, type: 3}
