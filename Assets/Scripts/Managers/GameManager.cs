@@ -86,6 +86,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(GameScenes.MainMenu);
     }
 
+    public void StartMainMenu() {
+        SceneManager.LoadScene(GameScenes.MainMenu);
+    }
+
     public void LoadPuzzle() 
     {
         if(MessageInScreen.Instance.isActive) return;
