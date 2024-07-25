@@ -32,8 +32,9 @@ public class MessageInScreen : MonoBehaviour
     [SerializeField] private List<Character> characterList = new List<Character>();
     [SerializeField] private GameObject messageElement;
     [SerializeField] private Image characterImage;
-    [SerializeField] private TMP_Text characterText;
-    [SerializeField] private TMP_Text characterNameTM;
+    [SerializeField] private TextMeshProUGUI characterText;
+    [SerializeField] private TextMeshProUGUI characterNameTM;
+    private const int charactersTimeBackup = 30;
 
     [HideInInspector] public bool isActive => messageElement.activeInHierarchy;
 
@@ -60,11 +61,11 @@ public class MessageInScreen : MonoBehaviour
         SendMessage(message.character, message.message);
     }
 
-    public void SendMessage(string character, string message)
+    public void SendMessage(string character, string message, float duration = 3f)
     {
         // Update the character image and text when properties are changed in the Inspector
         UpdateCharacterImage(character);
-        UpdateCharacterText(message);
+        UpdateCharacterText(message, duration);
         UpdateCharacterNameTM(character);
         messageElement.SetActive(true);
         StartCoroutine(MessageCooldown());
@@ -81,7 +82,7 @@ public class MessageInScreen : MonoBehaviour
         foreach (var message in messages)
         {
             UpdateCharacterImage(message.character);
-            UpdateCharacterText(message.message);
+            UpdateCharacterText(message.message, message.duration);
             UpdateCharacterNameTM(message.character); 
             yield return new WaitForSeconds(message.duration);
         }
@@ -109,9 +110,9 @@ public class MessageInScreen : MonoBehaviour
         }
     }
 
-    private void UpdateCharacterText(string message)
+    private void UpdateCharacterText(string message, float duration)
     {
-        characterText.text = message;
+        StartCoroutine(Coroutines.WriteText(characterText, message, Mathf.Clamp(duration / (message.Length + charactersTimeBackup), 0, 0.06f)));
     }
     private void UpdateCharacterNameTM(string characterName)
     {

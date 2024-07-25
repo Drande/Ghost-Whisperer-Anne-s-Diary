@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public static class Coroutines {
     
@@ -46,6 +47,16 @@ public static class Coroutines {
         else
         {
             Debug.LogWarning("GameObject does not have a CanvasGroup component.");
+        }
+    }
+
+    public static IEnumerator WriteText(TextMeshProUGUI target, string newText, float speed = 0.06f)
+    {
+        target.text = "";
+        foreach (char caracter in newText)
+        {
+            target.text += caracter;
+            yield return new WaitForSeconds(speed);
         }
     }
 }
