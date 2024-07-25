@@ -69,25 +69,25 @@ public class GameManager : MonoBehaviour
 
     public void StartGame() {
         SaveChapter(0);
-        SceneManager.LoadScene(GameScenes.Game);
+        LoadScene(GameScenes.Game);
     }
 
     public void ContinueGame() {
-        SceneManager.LoadScene(GameScenes.Game);
+        LoadScene(GameScenes.Game);
     }
 
     public void BackToGame(bool completed = false) {
         if(completed) { SaveChapter(currentChapter + 1); }
-        SceneManager.LoadScene(GameScenes.Game);
+        LoadScene(GameScenes.Game);
     }
 
     public void BackToTitle() {
         MessageInScreen.Instance.Stop();
-        SceneManager.LoadScene(GameScenes.MainMenu);
+        LoadScene(GameScenes.MainMenu);
     }
 
     public void StartMainMenu() {
-        SceneManager.LoadScene(GameScenes.MainMenu);
+        LoadScene(GameScenes.MainMenu);
     }
 
     public void LoadPuzzle() 
@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadMinigame(string sceneName) {
         try {
-            SceneManager.LoadScene(sceneName);
+            LoadScene(sceneName);
         } catch(Exception ex) {
             Debug.LogError("The scene " + sceneName + " could not be loaded: " + ex.Message);
         }
@@ -126,7 +126,15 @@ public class GameManager : MonoBehaviour
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
 
-        SceneManager.LoadScene(currentSceneName);
+        
+    }
+
+    private void LoadScene(string sceneName) {
+        if(LevelLoader.Instance != null) {
+            LevelLoader.Instance.Animate(() => SceneManager.LoadScene(sceneName));
+        } else {
+            SceneManager.LoadScene(sceneName);
+        }
     }
 
 }
