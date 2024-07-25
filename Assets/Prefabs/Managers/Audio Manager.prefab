@@ -49,6 +49,8 @@ MonoBehaviour:
   musicSounds:
   - audioClip: {fileID: 8300000, guid: fc2038f26f8ec6c41aefca070c69cb2a, type: 3}
     name: HappyMusic
+  - audioClip: {fileID: 8300000, guid: e3ae7d15f59fcc94e9f08860d1a3da5c, type: 3}
+    name: SadPiano
   sfxSounds:
   - audioClip: {fileID: 8300000, guid: ced5194500b65a9489c9d02680bc6908, type: 3}
     name: bad
