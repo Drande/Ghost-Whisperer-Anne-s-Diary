@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using TMPro;
+
 
 public class CardGroup : MonoBehaviour
 {
@@ -16,6 +18,8 @@ public class CardGroup : MonoBehaviour
     [SerializeField] private int attemps;
     [SerializeField] private string matchSfx;
     [SerializeField] private string noMatchSfx;
+    [SerializeField] private TextMeshProUGUI attemptsText;
+
     public MemoryGameManagerUI memoryGameManager;
     public event EventHandler OnCardMatch;
 
@@ -27,7 +31,7 @@ public class CardGroup : MonoBehaviour
     public void Update()
     {
         GameOverForAttemps();
-        Debug.Log("attemps: " + attemps);
+        UpdateAttemptsText();
     }
 
     public void Subscribe(CardSingleUI cardSingleUI)
@@ -136,7 +140,6 @@ public class CardGroup : MonoBehaviour
         if (selectedCardList.Count == 2)
         {
             attemps--;
-            Debug.Log("attemps: " + attemps);
         }
     }
 
@@ -147,10 +150,15 @@ public class CardGroup : MonoBehaviour
             if (Camera.main.TryGetComponent<CameraShaker>(out var camManager)) camManager.Shake(); //Convert canvas to worldspace for working
             if (MessageInScreen.Instance.isActive) return;
             MessageInScreen.Instance.StartDialog(AfterFailChapterTwoDialogs.Start, () => {
-                // Configurar acciones después de que termina el diálogo de victoria.
-                //restart scene o restart el minijuego
-                GameManager.Instance.RestartScene();
+            GameManager.Instance.RestartScene();
             });
+        }
+    }
+    private void UpdateAttemptsText()
+    {
+        if (attemptsText != null)
+        {
+            attemptsText.text = $"Attempts: {attemps}";
         }
     }
 }

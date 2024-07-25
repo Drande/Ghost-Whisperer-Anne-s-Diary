@@ -129,7 +129,7 @@ public class AudioManager : MonoBehaviour
         {
             default:
                 if(!musicSource.isPlaying) {
-                    PlayMusic("HappyMusic");
+                    PlayMusic("SadPiano");
                 }
                 break;
         }

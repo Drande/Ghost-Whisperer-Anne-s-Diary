@@ -5,7 +5,8 @@ public static class AfterChapterTwoDialogs
     {
         new Message(CharacterNames.Rob, "I didn't realize... there were good times too."),
         new Message(CharacterNames.Anne14yo, "Yes, Rob. Not everything was bad."),
-        new Message(CharacterNames.Rob, "I can see that now. I remember my mom's smile and the times we laughed."),
+        new Message(CharacterNames.Rob, "I can see that now."),
+        new Message(CharacterNames.Rob, "I remember my mom's smile and the times we laughed."),
         new Message(CharacterNames.Anne14yo, "Those memories are just as real as the painful ones."),
         new Message(CharacterNames.Rob, "Thank you, Anne. You've helped me find peace."),
         new Message(CharacterNames.Anne14yo, "I'm glad I could help, Rob."),

@@ -7,4 +7,5 @@ public static class CharacterNames
     public const string Rob = "Rob";
     public const string Millie = "Millie";
     public const string Emma = "Emma";
+    public const string RobAngry = "RobAngry";
 }
