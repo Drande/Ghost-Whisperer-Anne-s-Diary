@@ -48,7 +48,12 @@ public class PuzzleManager : MonoBehaviour
         }
     }
 
-    private void OnPuzzleCompleted() {
-        GameManager.Instance.BackToGame(true);
+    private void OnPuzzleCompleted()
+    {
+        if (MessageInScreen.Instance.isActive) return;
+        MessageInScreen.Instance.StartDialog(AfterChapterOneDialogs.Start, () => {
+            // Configurar acciones después de que termina el diálogo de victoria.
+            GameManager.Instance.BackToGame(true);
+        });
     }
 }

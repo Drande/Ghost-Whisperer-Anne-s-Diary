@@ -102,12 +102,14 @@ public class GameManager : MonoBehaviour
             LoadMinigame(GameScenes.MemoryMatch);
         });
     }
+
     public void LoadSimon() {
         MessageInScreen.Instance.StartDialog(ChapterThreeDialogs.Start, () => {
             // TODO: Configurar acciones despues de que termina el dialogo.
             LoadMinigame(GameScenes.SimonSays);
         });
     }
+
     public void LoadMinigame(string sceneName) {
         try {
             SceneManager.LoadScene(sceneName);
@@ -115,4 +117,12 @@ public class GameManager : MonoBehaviour
             Debug.LogError("The scene " + sceneName + " could not be loaded: " + ex.Message);
         }
     }
+
+    public void RestartScene()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        SceneManager.LoadScene(currentSceneName);
+    }
+
 }

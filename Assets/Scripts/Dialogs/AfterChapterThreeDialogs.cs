@@ -1,7 +1,7 @@
 public static class AfterChapterThreeDialogs
 {
     // Llamar cuando el jugador gana el minijuego del Capítulo Tres.
-    public static Message[] Victory = new Message[]
+    public static Message[] Start = new Message[]
     {
         new Message(CharacterNames.Anne20yo, "Millie, I did it. I completed the sequence."),
         new Message(CharacterNames.Millie, "You... you actually did it. How?"),

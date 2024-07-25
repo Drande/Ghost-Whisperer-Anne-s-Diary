@@ -82,7 +82,7 @@ public class MessageInScreen : MonoBehaviour
             yield return new WaitForSeconds(message.duration);
         }
         messageElement.SetActive(false);
-        onComplete.Invoke();
+        onComplete?.Invoke();
     }
 
 

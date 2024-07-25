@@ -1,7 +1,7 @@
 public static class ChapterThreeFailureDialogs
 {
     // Llamar cuando el jugador falla el minijuego del Capítulo Tres.
-    public static Message[] Failure = new Message[]
+    public static Message[] Start = new Message[]
     {
         new Message(CharacterNames.Anne20yo, "Ah! It hurts... What is happening to me?"),
         new Message(CharacterNames.Millie, "I warned you, Anne. This is what happens when you don't follow my lead."),
