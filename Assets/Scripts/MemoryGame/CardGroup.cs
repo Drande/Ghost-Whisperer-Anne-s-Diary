@@ -27,7 +27,6 @@ public class CardGroup : MonoBehaviour
     public void Update()
     {
         GameOverForAttemps();
-        Debug.Log("attemps: " + attemps);
     }
 
     public void Subscribe(CardSingleUI cardSingleUI)
@@ -136,7 +135,6 @@ public class CardGroup : MonoBehaviour
         if (selectedCardList.Count == 2)
         {
             attemps--;
-            Debug.Log("attemps: " + attemps);
         }
     }
 
@@ -147,9 +145,7 @@ public class CardGroup : MonoBehaviour
             if (Camera.main.TryGetComponent<CameraShaker>(out var camManager)) camManager.Shake(); //Convert canvas to worldspace for working
             if (MessageInScreen.Instance.isActive) return;
             MessageInScreen.Instance.StartDialog(AfterFailChapterTwoDialogs.Start, () => {
-                // Configurar acciones después de que termina el diálogo de victoria.
-                //restart scene o restart el minijuego
-                GameManager.Instance.RestartScene();
+            GameManager.Instance.RestartScene();
             });
         }
     }
