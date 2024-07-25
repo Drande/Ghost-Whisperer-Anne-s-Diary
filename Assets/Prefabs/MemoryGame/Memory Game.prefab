@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8443579018650742736}
   - component: {fileID: 7158071285312373262}
   - component: {fileID: 7715237208272356247}
+  - component: {fileID: 1998420854}
   m_Layer: 5
   m_Name: Card Area
   m_TagString: Untagged
@@ -54,13 +55,13 @@ MonoBehaviour:
   cardSingleUIList: []
   selectedCardList: []
   selectedCardNames: []
-  cardIdle: {fileID: 21300000, guid: 9e96d29334d02a64b8e7e86ea1981a85, type: 3}
-  cardActive: {fileID: 21300000, guid: 9e96d29334d02a64b8e7e86ea1981a85, type: 3}
+  cardIdle: {fileID: 21300000, guid: 9615a0dff523dbe48b57dd6f961c360e, type: 3}
+  cardActive: {fileID: 21300000, guid: 9615a0dff523dbe48b57dd6f961c360e, type: 3}
   attemps: 0
   matchSfx: 
   noMatchSfx: 
-  attemptsText: {fileID: 0}
-  memoryGameManager: {fileID: 0}
+  attemptsText: {fileID: 4142944902974249923}
+  memoryGameManager: {fileID: 4316858288460367668}
 --- !u!114 &7715237208272356247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,25 +75,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardList:
-  - cardName: ApplePie
-    cardImage: {fileID: 21300000, guid: 75d794440be1c5f469761fa741fad9c6, type: 3}
-  - cardName: Bread
-    cardImage: {fileID: 21300000, guid: 8f0c59cd081057442ac191800a763af4, type: 3}
-  - cardName: Baguette
-    cardImage: {fileID: 21300000, guid: 48d65bd3a0de3cb439cfc0d0abeb8213, type: 3}
-  - cardName: Bun
-    cardImage: {fileID: 21300000, guid: ec5fe5c273c259043a714b3bb4ee501f, type: 3}
-  - cardName: Bacon
-    cardImage: {fileID: 21300000, guid: cca71ca0da0963f468f7935a08647577, type: 3}
-  - cardName: Burger
-    cardImage: {fileID: 21300000, guid: aaa5f6768501b21408903fb79542e3c9, type: 3}
-  - cardName: Burrito
-    cardImage: {fileID: 21300000, guid: 56df5f5597796b446a54ef2395a0f0c9, type: 3}
-  - cardName: Bagel
-    cardImage: {fileID: 21300000, guid: 19995e1577d033747a3b98b42dcd5be1, type: 3}
+  - cardName: Friends
+    cardImage: {fileID: 21300000, guid: c5a3a3470dd65a344ab745186a7581f1, type: 3}
+  - cardName: Horse
+    cardImage: {fileID: 21300000, guid: a59ae6efcb63ffa419197ba34ae7c81e, type: 3}
+  - cardName: MotherAndSon
+    cardImage: {fileID: 21300000, guid: 3be4000ae2aabdd4285f25229837662c, type: 3}
+  - cardName: PlayGround
+    cardImage: {fileID: 21300000, guid: 74aee070dfb10b64ea416102a9c03f0b, type: 3}
+  - cardName: Teddy
+    cardImage: {fileID: 21300000, guid: abdafc61546bdf148a3ea26bd4be0735, type: 3}
+  - cardName: Toys
+    cardImage: {fileID: 21300000, guid: cc0ffc43bfe263a489bd72890d6ff9e3, type: 3}
+  - cardName: Toys2
+    cardImage: {fileID: 21300000, guid: 7db58cc416195594e957eb71b5b9cdc4, type: 3}
+  - cardName: Belt
+    cardImage: {fileID: 21300000, guid: 5e28ab54cdc325247b5ea9fa81f38210, type: 3}
   cardListToSort: []
   cardContainer: {fileID: 8443579018650742736}
   cardPrefab: {fileID: 8740034377388313474}
+--- !u!114 &1998420854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027830576988150549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_StartCorner: 0
+  m_StartAxis: 0
+  m_CellSize: {x: 135, y: 240}
+  m_Spacing: {x: 30, y: 10}
+  m_Constraint: 1
+  m_ConstraintCount: 4
 --- !u!1 &1442933128449453688
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +479,22 @@ PrefabInstance:
     - target: {fileID: 2229034507606137352, guid: 5ef208e0843efc94996e4e3b6d60af35, type: 3}
       propertyPath: m_Name
       value: Card
+      objectReference: {fileID: 0}
+    - target: {fileID: 2868710607940247182, guid: 5ef208e0843efc94996e4e3b6d60af35, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9615a0dff523dbe48b57dd6f961c360e, type: 3}
+    - target: {fileID: 3296164214779793611, guid: 5ef208e0843efc94996e4e3b6d60af35, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9615a0dff523dbe48b57dd6f961c360e, type: 3}
+    - target: {fileID: 4703607208613504885, guid: 5ef208e0843efc94996e4e3b6d60af35, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4703607208613504885, guid: 5ef208e0843efc94996e4e3b6d60af35, type: 3}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ef208e0843efc94996e4e3b6d60af35, type: 3}
