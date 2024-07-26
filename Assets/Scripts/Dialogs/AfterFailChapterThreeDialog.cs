@@ -1,6 +1,5 @@
 public static class ChapterThreeFailureDialogs
 {
-    // Llamar cuando el jugador falla el minijuego del Capítulo Tres.
     public static Message[] Start = new Message[]
     {
         new Message(CharacterNames.AnneDefeated, "Ah! It hurts... What is happening to me?"),
@@ -11,7 +10,5 @@ public static class ChapterThreeFailureDialogs
         new Message(CharacterNames.Millie, "Then focus. Do better. This pain is a reminder of my suffering. Don't let it be in vain."),
         new Message(CharacterNames.AnneDefeated, "I... I'll try again. I won't give up."),
         new Message(CharacterNames.Millie, "Good. But remember, one more mistake and the pain will be worse. Concentrate, Anne."),
-        
-        // reiniciar minijuego o reiniciar la escena del capitulo tres
     };
 }

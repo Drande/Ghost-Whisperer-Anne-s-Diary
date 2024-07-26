@@ -1,7 +1,5 @@
 public static class ChapterOneDialogs
-{
-    // Llamar después de la pantalla del chapter 1, antes del minijuego, este diálogo da paso al minijuego.
-    public static Message[] Start = new Message[]
+{    public static Message[] Start = new Message[]
     {
         new Message(CharacterNames.Emma, "Hello, can you hear me?"),
         new Message(CharacterNames.Anne7yo, "Yes, I can. Who are you? You look... different."),
@@ -24,7 +22,5 @@ public static class ChapterOneDialogs
         new Message(CharacterNames.Emma, "I think solving it might help me understand what happened and finally let me rest."),
         new Message(CharacterNames.Anne7yo, "Don't worry, Emma. I'll help you solve it."),
         new Message(CharacterNames.Anne7yo, "You don't have to be alone anymore."),
-        
-        // Empezar minijuego
     };
 }
