@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,7 +35,12 @@ public class MessageInScreen : MonoBehaviour
     [SerializeField] private Image characterImage;
     [SerializeField] private TextMeshProUGUI characterText;
     [SerializeField] private TextMeshProUGUI characterNameTM;
+    [SerializeField] private string skipButton = "Fire1";
+    private Coroutine textWriter;
+    private Coroutine currentDialog;
+    private string currentMessage;
     private const int charactersTimeBackup = 30;
+    public event Action onDialogCompleted;
 
     [HideInInspector] public bool isActive => messageElement.activeInHierarchy;
 
@@ -51,43 +57,52 @@ public class MessageInScreen : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(!isActive) return;
+        if(Input.GetButtonDown(skipButton)) {
+            StopCoroutine(textWriter);
+            characterText.text = currentMessage;
+        }
+    }
+
     public void Stop() {
         StopAllCoroutines();
         messageElement.SetActive(false);
     }
 
-    public void SendMessage(Message message)
+    public void StartDialog(Message[] messages, System.Action onCompleted)
     {
-        SendMessage(message.character, message.message);
+        onDialogCompleted += onCompleted;
+        currentDialog = StartCoroutine(DialogCooldown(messages));
     }
 
-    public void SendMessage(string character, string message, float duration = 3f)
+    public void SkipCurrentDialog()
     {
-        // Update the character image and text when properties are changed in the Inspector
-        UpdateCharacterImage(character);
-        UpdateCharacterText(message, duration);
-        UpdateCharacterNameTM(character);
-        messageElement.SetActive(true);
-        StartCoroutine(MessageCooldown());
+        if(currentDialog != null) StopCoroutine(currentDialog);
+        if(textWriter != null) StopCoroutine(textWriter);
+        messageElement.SetActive(false);
+        NotifyComplete();
     }
 
-    public void StartDialog(Message[] messages, System.Action onComplete)
-    {
-        StartCoroutine(DialogCooldown(messages, onComplete));
+    private void NotifyComplete() {
+        onDialogCompleted?.Invoke();
+        onDialogCompleted = null;
     }
 
-    private System.Collections.IEnumerator DialogCooldown(Message[] messages, System.Action onComplete)
+    private System.Collections.IEnumerator DialogCooldown(Message[] messages)
     {
         messageElement.SetActive(true);
         foreach (var message in messages)
         {
+            currentMessage = message.message;
             UpdateCharacterImage(message.character);
             UpdateCharacterText(message.message, message.duration);
             UpdateCharacterNameTM(message.character); 
             yield return new WaitForSeconds(message.duration);
         }
         messageElement.SetActive(false);
-        onComplete?.Invoke();
+        NotifyComplete();
     }
 
 
@@ -112,7 +127,7 @@ public class MessageInScreen : MonoBehaviour
 
     private void UpdateCharacterText(string message, float duration)
     {
-        StartCoroutine(Coroutines.WriteText(characterText, message, Mathf.Clamp(duration / (message.Length + charactersTimeBackup), 0, 0.06f)));
+        textWriter = StartCoroutine(Coroutines.WriteText(characterText, message, Mathf.Clamp(duration / (message.Length + charactersTimeBackup), 0, 0.06f)));
     }
     private void UpdateCharacterNameTM(string characterName)
     {
