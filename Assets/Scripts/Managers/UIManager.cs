@@ -19,7 +19,7 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        GameManager.Instance.onChapterLoaded += HandleChapterLoad;
+        GameManager.Instance.OnChapterLoaded += HandleChapterLoad;
         HandleChapterLoad();
 
         // Initialize slider values with the current settings
@@ -65,6 +65,6 @@ public class UIManager : MonoBehaviour
         // Remove listeners when the object is destroyed to avoid memory leaks
         musicVolumeSlider.onValueChanged.RemoveListener(OnMusicVolumeChanged);
         sfxVolumeSlider.onValueChanged.RemoveListener(OnSfxVolumeChanged);
-        GameManager.Instance.onChapterLoaded -= HandleChapterLoad;
+        GameManager.Instance.OnChapterLoaded -= HandleChapterLoad;
     }
 }

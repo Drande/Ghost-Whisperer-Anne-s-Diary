@@ -79,9 +79,9 @@ public class MessageInScreen : MonoBehaviour
 
     public void SkipCurrentDialog()
     {
-        if(Time.timeScale == 0) return;
         if(currentDialog != null) StopCoroutine(currentDialog);
         if(textWriter != null) StopCoroutine(textWriter);
+        if(GameManager.Instance.isPaused) GameManager.Instance.TogglePause();
         NotifyComplete();
     }
 

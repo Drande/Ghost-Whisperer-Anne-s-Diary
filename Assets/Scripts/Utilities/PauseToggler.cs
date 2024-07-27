@@ -6,26 +6,19 @@ public class PauseToggler : MonoBehaviour {
     [SerializeField] private Sprite enabledSprite;
     [SerializeField] private Sprite disabledSprite;
     private Image imageComponent;
-    private Button button;
 
     void Start()
     {
         imageComponent = GetComponent<Image>();
-        button = GetComponent<Button>();
-        button.onClick.AddListener(TogglePause);
+        GameManager.Instance.OnPauseStateChanged += HandlePauseStateChanged;
     }
 
-    void Destroy() {
-        button.onClick.RemoveListener(TogglePause);
+    private void HandlePauseStateChanged(bool isPaused)
+    {
+        imageComponent.sprite = isPaused ? disabledSprite : enabledSprite;
     }
 
-    public void TogglePause() {
-        if(Time.timeScale == 0) {
-            Time.timeScale = 1;
-            imageComponent.sprite = enabledSprite;
-        } else {
-            Time.timeScale = 0;
-            imageComponent.sprite = disabledSprite;
-        }
+    private void OnDestroy() {
+        GameManager.Instance.OnPauseStateChanged -= HandlePauseStateChanged;
     }
 }
