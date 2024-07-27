@@ -13,16 +13,14 @@ public class Character
 
 public class Message
 {
-    public Message(string character, string message, float duration = 3f)
+    public Message(string character, string message)
     {
         this.character = character;
         this.message = message;
-        this.duration = duration;
     }
 
     public string character { get; set; } = CharacterNames.Rob;
     public string message { get; set; }
-    public float duration { get; set; }
 }
 
 
@@ -36,10 +34,11 @@ public class MessageInScreen : MonoBehaviour
     [SerializeField] private TextMeshProUGUI characterText;
     [SerializeField] private TextMeshProUGUI characterNameTM;
     [SerializeField] private string skipButton = "Fire1";
+    [SerializeField] private float writeSpeed = 0.06f;
+    [SerializeField] private float fixedSecondsDelay = 1f;
     private Coroutine textWriter;
     private Coroutine currentDialog;
     private string currentMessage;
-    private const int charactersTimeBackup = 30;
     public event Action onDialogCompleted;
 
     [HideInInspector] public bool isActive => messageElement.activeInHierarchy;
@@ -98,9 +97,9 @@ public class MessageInScreen : MonoBehaviour
         {
             currentMessage = message.message;
             UpdateCharacterImage(message.character);
-            UpdateCharacterText(message.message, message.duration);
+            UpdateCharacterText(message.message);
             UpdateCharacterNameTM(message.character); 
-            yield return new WaitForSeconds(message.duration);
+            yield return new WaitForSeconds((message.message.Length * writeSpeed) + fixedSecondsDelay);
         }
         NotifyComplete();
     }
@@ -125,9 +124,9 @@ public class MessageInScreen : MonoBehaviour
         }
     }
 
-    private void UpdateCharacterText(string message, float duration)
+    private void UpdateCharacterText(string message)
     {
-        textWriter = StartCoroutine(Coroutines.WriteText(characterText, message, Mathf.Clamp(duration / (message.Length + charactersTimeBackup), 0, 0.06f)));
+        textWriter = StartCoroutine(Coroutines.WriteText(characterText, message, writeSpeed));
     }
     private void UpdateCharacterNameTM(string characterName)
     {
