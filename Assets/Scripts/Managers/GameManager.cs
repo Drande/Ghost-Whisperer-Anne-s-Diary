@@ -8,7 +8,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject[] chapterPrefabs;
     private const string CurrentChapterKey = "CurrentChapter";
     public int currentChapter { get; private set; }
-    public event Action onChapterLoaded;
+    public event Action OnChapterLoaded;
+    public delegate void PauseStateChanged(bool isPaused);
+    public event PauseStateChanged OnPauseStateChanged;
+    public bool isPaused => Time.timeScale == 0;
 
     private void SaveChapter(int value)
     {
@@ -19,7 +22,7 @@ public class GameManager : MonoBehaviour
     private void LoadIntegerForCurrentScene()
     {
         currentChapter = PlayerPrefs.GetInt(CurrentChapterKey, 0);
-        onChapterLoaded?.Invoke();
+        OnChapterLoaded?.Invoke();
     }
 
     private void Awake() {
@@ -33,10 +36,16 @@ public class GameManager : MonoBehaviour
 
     private void Start() {
         HandleSceneChange(SceneManager.GetActiveScene());
-        SceneManager.activeSceneChanged += (previous, current) =>
-        {
-            HandleSceneChange(current);
-        };
+        SceneManager.activeSceneChanged += (_, current) => HandleSceneChange(current);
+    }
+
+    public void TogglePause() {
+        if(Time.timeScale == 0) {
+            Time.timeScale = 1;
+        } else {
+            Time.timeScale = 0;
+        }
+        Instance.OnPauseStateChanged?.Invoke(isPaused);
     }
 
     private void HandleSceneChange(Scene scene)
@@ -54,7 +63,7 @@ public class GameManager : MonoBehaviour
             case GameScenes.SimonSays:
             break;
             default:
-                break;
+            break;
         }
     }
     
@@ -119,8 +128,7 @@ public class GameManager : MonoBehaviour
     public void RestartScene()
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
-
-        
+        LoadScene(currentSceneName);
     }
 
     private void LoadScene(string sceneName) {
