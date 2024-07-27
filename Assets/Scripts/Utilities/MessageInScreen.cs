@@ -79,13 +79,14 @@ public class MessageInScreen : MonoBehaviour
 
     public void SkipCurrentDialog()
     {
+        if(Time.timeScale == 0) return;
         if(currentDialog != null) StopCoroutine(currentDialog);
         if(textWriter != null) StopCoroutine(textWriter);
-        messageElement.SetActive(false);
         NotifyComplete();
     }
 
     private void NotifyComplete() {
+        messageElement.SetActive(false);
         onDialogCompleted?.Invoke();
         onDialogCompleted = null;
     }
@@ -101,7 +102,6 @@ public class MessageInScreen : MonoBehaviour
             UpdateCharacterNameTM(message.character); 
             yield return new WaitForSeconds(message.duration);
         }
-        messageElement.SetActive(false);
         NotifyComplete();
     }
 
