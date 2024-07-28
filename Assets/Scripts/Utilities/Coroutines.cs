@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Text;
 using UnityEngine;
 using TMPro;
 
@@ -53,10 +54,29 @@ public static class Coroutines {
     public static IEnumerator WriteText(TextMeshProUGUI target, string newText, float speed = 0.06f)
     {
         target.text = "";
-        foreach (char caracter in newText)
+        var elapsed = 0f;
+        var index = 0;
+        var stringBuilder = new StringBuilder();
+
+        while (index < newText.Length)
         {
-            target.text += caracter;
-            yield return new WaitForSeconds(speed);
+            // Add elapsed time since last frame
+            elapsed += Time.deltaTime;
+
+            // Add characters while enough time has passed
+            while (elapsed >= speed && index < newText.Length)
+            {
+                stringBuilder.Append(newText[index]);
+                index++;
+                // Reduce elapsed time by the speed to account for the added character
+                elapsed -= speed;
+            }
+
+            // Update the text in one operation
+            target.text = stringBuilder.ToString();
+
+            // Wait for the next frame
+            yield return null;
         }
     }
 }
