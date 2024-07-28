@@ -1,0 +1,59 @@
+name: Build and Deploy 💻
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  checks: write
+  actions: write
+  pull-requests: write
+
+jobs:
+  buildForAllSupportedPlatforms:
+    name: Build, Test and Deploy for ${{ matrix.targetPlatform }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false # if one build fails, other platforms will still be built
+      matrix:
+        targetPlatform:
+          - WebGL
+        
+    steps:
+      # Fetch Files  
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+      
+      # Cache Unity Library Folder
+      - uses: actions/cache@v3
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}
+          restore-keys: Library-
+
+      # Upload Test results as artifacts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Test results
+          path: artifacts
+      
+      # Build Unity Game
+      - uses: game-ci/unity-builder@v4
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          targetPlatform: ${{ matrix.targetPlatform }}
+      
+      # Publish to Itch.IO
+      - uses: manleydev/butler-publish-itchio-action@master
+        env:
+          BUTLER_CREDENTIALS: ${{ secrets.BUTLER_CREDENTIALS }}
+          CHANNEL: ${{ matrix.targetPlatform }}
+          ITCH_GAME: ${{ vars.ITCH_GAME }}
+          ITCH_USER: ${{ vars.ITCH_USER }}
+          PACKAGE: build/${{ matrix.targetPlatform }}
