@@ -32,7 +32,7 @@ public class UIManager : MonoBehaviour
     }
 
     private void HandleChapterLoad() {
-        continueButton.interactable = (GameManager.Instance.currentChapter > 0);
+        continueButton.interactable = GameManager.Instance.currentChapter > 0;
     }
 
     private void OnMusicVolumeChanged(float value)
