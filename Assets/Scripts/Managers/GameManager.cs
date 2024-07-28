@@ -52,6 +52,9 @@ public class GameManager : MonoBehaviour
     {
         switch (scene.name)
         {
+            case GameScenes.MainMenu:
+                LoadIntegerForCurrentScene();
+            break;
             case GameScenes.Game:
                 LoadIntegerForCurrentScene();
                 HandleCurrentChapter();
