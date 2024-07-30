@@ -59,7 +59,7 @@ public class CardGroup : MonoBehaviour
         {
             if(MessageInScreen.Instance != null) 
             {
-            MessageInScreen.Instance.StartDialog(ChapterTwoDialogsInGame.Start, null);
+                MessageInScreen.Instance.StartDialog(ChapterTwoDialogsInGame.Start);
             }
             else 
             {
@@ -149,7 +149,7 @@ public class CardGroup : MonoBehaviour
         {
             if (Camera.main.TryGetComponent<CameraShaker>(out var camManager)) camManager.Shake(); //Convert canvas to worldspace for working
             if (MessageInScreen.Instance.isActive) return;
-            MessageInScreen.Instance.StartDialog(AfterFailChapterTwoDialogs.Start, () => {
+            MessageInScreen.Instance.StartDialog(AfterFailChapterTwoDialogs.Start, (_) => {
             GameManager.Instance.RestartScene();
             });
         }
