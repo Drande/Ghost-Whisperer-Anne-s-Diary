@@ -31,7 +31,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 16.1
+    m_StopTime: 14.483334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -58,14 +58,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 5.983333
+  - time: 4.85
     functionName: ChangeText
     data: Stands a modest home Surrounded by snow-covered trees
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 11.016666
+  - time: 9.05
     functionName: ChangeText
     data: It's a place of warmth and history Where stories of old merge with the
       present
@@ -73,7 +73,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 16.1
+  - time: 14.483334
     functionName: ChangeText
     data: Welcome to Anne's story!
     objectReferenceParameter: {fileID: 0}
