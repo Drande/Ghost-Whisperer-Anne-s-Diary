@@ -10,9 +10,9 @@ public class CharacterMovement : MonoBehaviour
     private float movX, movZ;
     public float degrees = 2;
     public float speed = 8;
-    public float jumpForce = 6;
+    //public float jumpForce = 6;
     public float fallMultiplier = 1;
-    private bool isJumping;
+    //private bool isJumping;
     private Vector3 movement;
     public Animator animator;
  
@@ -32,27 +32,27 @@ public class CharacterMovement : MonoBehaviour
 
         // Update animator parameters
         animator.SetFloat("Speed", movement.magnitude);
-        animator.SetBool("IsJumping", isJumping);
+        //animator.SetBool("IsJumping", isJumping);
         animator.SetFloat("MovementX", movX);
         animator.SetFloat("MovementZ", movZ);
 
-        Jump();
+        //Jump();
     }
 
     private void FixedUpdate()
     {
         Movement();
-        JumpFall();
+        //JumpFall();
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isJumping = false;
-            animator.SetBool("IsJumping", isJumping);
-        }
-    }
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.CompareTag("Ground"))
+    //    {
+    //        isJumping = false;
+    //        animator.SetBool("IsJumping", isJumping);
+    //    }
+    //}
 
     private void Movement()
     {
@@ -85,21 +85,21 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
-    private void Jump()
-    {
-        if (Input.GetButtonDown("Jump") && !isJumping)
-        {
-            playerRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            isJumping = true;
-            animator.SetBool("IsJumping", isJumping);
-        }
-    }
+    //private void Jump()
+    //{
+    //    if (Input.GetButtonDown("Jump") && !isJumping)
+    //    {
+    //        playerRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    //        isJumping = true;
+    //        animator.SetBool("IsJumping", isJumping);
+    //    }
+    //}
 
-    private void JumpFall()
-    {
-        if (playerRigidbody.velocity.y < 0)
-        {
-            playerRigidbody.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        }
-    }
+    //private void JumpFall()
+    //{
+    //    if (playerRigidbody.velocity.y < 0)
+    //    {
+    //        playerRigidbody.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+    //    }
+    //}
 }
