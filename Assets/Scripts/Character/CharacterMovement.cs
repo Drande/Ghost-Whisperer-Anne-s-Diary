@@ -1,105 +1,82 @@
-using DG.Tweening.Core.Easing;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
-    private Rigidbody playerRigidbody;
-    private float movX, movZ;
-    public float degrees = 2;
-    public float speed = 8;
-    //public float jumpForce = 6;
-    public float fallMultiplier = 1;
-    //private bool isJumping;
-    private Vector3 movement;
-    public Animator animator;
- 
+    public Animator playerAnim;
+    public Rigidbody playerRigid;
+    public float w_speed, wb_speed, olw_speed, rn_speed, ro_speed;
+    public bool walking;
+    public Transform playerTrans;
 
-
-    void Start()
+    private void Start()
     {
-        playerRigidbody = GetComponent<Rigidbody>();
-        animator = GetComponent<Animator>();
+        olw_speed = w_speed; // Store the original walk speed
+    }
+
+    void FixedUpdate()
+    {
+        Vector3 movement = Vector3.zero;
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            movement += transform.forward * w_speed * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            movement -= transform.forward * wb_speed * Time.deltaTime;
+        }
+
+        playerRigid.velocity = new Vector3(movement.x, playerRigid.velocity.y, movement.z);
     }
 
     void Update()
     {
-        movX = Input.GetAxisRaw("Horizontal");
-        movZ = Input.GetAxisRaw("Vertical");
-        movement = new Vector3(movX, 0, movZ).normalized;
-
-        // Update animator parameters
-        animator.SetFloat("Speed", movement.magnitude);
-        //animator.SetBool("IsJumping", isJumping);
-        animator.SetFloat("MovementX", movX);
-        animator.SetFloat("MovementZ", movZ);
-
-        //Jump();
-    }
-
-    private void FixedUpdate()
-    {
-        Movement();
-        //JumpFall();
-    }
-
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.gameObject.CompareTag("Ground"))
-    //    {
-    //        isJumping = false;
-    //        animator.SetBool("IsJumping", isJumping);
-    //    }
-    //}
-
-    private void Movement()
-    {
-        if (movement.magnitude > 0)
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            Vector3 move = transform.position + movement * Time.deltaTime * speed;
-            playerRigidbody.MovePosition(move);
+            playerAnim.SetTrigger("walk");
+            playerAnim.ResetTrigger("idle");
+            walking = true;
         }
-        if (movX > 0) // Moving right
+        if (Input.GetKeyUp(KeyCode.W))
         {
-            transform.rotation = Quaternion.Euler(0, 90, 0);
+            playerAnim.ResetTrigger("walk");
+            playerAnim.SetTrigger("idle");
+            walking = false;
         }
-        else if (movX < 0) // Moving left
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            transform.rotation = Quaternion.Euler(0, -90, 0);
+            playerAnim.SetTrigger("walkback");
+            playerAnim.ResetTrigger("idle");
         }
-        else if (movZ > 0) // Moving forward
+        if (Input.GetKeyUp(KeyCode.S))
         {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
+            playerAnim.ResetTrigger("walkback");
+            playerAnim.SetTrigger("idle");
         }
-        else if (movZ < 0) // Moving backward
+        if (Input.GetKey(KeyCode.A))
         {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
+            playerTrans.Rotate(0, -ro_speed * Time.deltaTime, 0);
         }
-        else
+        if (Input.GetKey(KeyCode.D))
         {
-            // Stop Movement
-            playerRigidbody.velocity = new Vector3(0, playerRigidbody.velocity.y, 0);
-            playerRigidbody.angularVelocity = Vector3.zero;
+            playerTrans.Rotate(0, ro_speed * Time.deltaTime, 0);
+        }
+        if (walking == true)
+        {
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                w_speed += rn_speed;
+                playerAnim.SetTrigger("run");
+                playerAnim.ResetTrigger("walk");
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                w_speed = olw_speed;
+                playerAnim.ResetTrigger("run");
+                playerAnim.SetTrigger("walk");
+            }
         }
     }
-
-    //private void Jump()
-    //{
-    //    if (Input.GetButtonDown("Jump") && !isJumping)
-    //    {
-    //        playerRigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-    //        isJumping = true;
-    //        animator.SetBool("IsJumping", isJumping);
-    //    }
-    //}
-
-    //private void JumpFall()
-    //{
-    //    if (playerRigidbody.velocity.y < 0)
-    //    {
-    //        playerRigidbody.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-    //    }
-    //}
 }
