@@ -110,6 +110,18 @@ MonoBehaviour:
     name: si_stretched
   - audioClip: {fileID: 8300000, guid: 06e31996889c33b42b0945622dc29be2, type: 3}
     name: sol_stretched
+  - audioClip: {fileID: 8300000, guid: b6faf3df24fd121438d60964b9c5e0a3, type: 3}
+    name: ui_button1
+  - audioClip: {fileID: 8300000, guid: c4e30314ce2a11549b5959b3def420ec, type: 3}
+    name: ui_button2
+  - audioClip: {fileID: 8300000, guid: 8313fec7ef8d8f8448d43aeca88183ea, type: 3}
+    name: ui_button3
+  - audioClip: {fileID: 8300000, guid: 2d061ab64992a554c8a2e782cfd6d917, type: 3}
+    name: ui_button4
+  - audioClip: {fileID: 8300000, guid: 10944849e510c0046baf6d2ff0e112f7, type: 3}
+    name: ui_button5
+  - audioClip: {fileID: 8300000, guid: 3b340364cfb07404bb832c03a3f17b68, type: 3}
+    name: ui_hover
   musicSource: {fileID: 274260404827659225}
   sfxSource: {fileID: 274260406244230466}
   masterMixer: {fileID: 24100000, guid: edea291aa456d2c4889dadaf32993097, type: 2}
