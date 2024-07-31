@@ -153,11 +153,11 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySFX(string name)
     {
-        var sound = Array.Find(sfxSounds, s => s.name == name);
+        var sound = Array.Find(Instance.sfxSounds, s => s.name == name);
         if (sound != null)
         {
-            sfxSource.clip = sound.audioClip;
-            sfxSource.Play();
+            Instance.sfxSource.clip = sound.audioClip;
+            Instance.sfxSource.Play();
         }
         else
         {
