@@ -35,7 +35,7 @@ public class SimonSaysManager : MonoBehaviour
 
     private void HandleWin() {
         if (MessageInScreen.Instance.isActive) return;
-        MessageInScreen.Instance.StartDialog(AfterChapterThreeDialogs.Start, () => 
+        MessageInScreen.Instance.StartDialog(AfterChapterThreeDialogs.Start, (_) => 
         {
         GameManager.Instance.BackToGame(true);
         });
