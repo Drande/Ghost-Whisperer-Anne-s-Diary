@@ -51,7 +51,7 @@ public class PuzzleManager : MonoBehaviour
     private void OnPuzzleCompleted()
     {
         if (MessageInScreen.Instance.isActive) return;
-        MessageInScreen.Instance.StartDialog(AfterChapterOneDialogs.Start, () => 
+        MessageInScreen.Instance.StartDialog(AfterChapterOneDialogs.Start, (_) => 
         {
         GameManager.Instance.BackToGame(true);
         });
