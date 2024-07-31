@@ -23,4 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/Puzzle Assembly.unity
     guid: 57e450020d6e48e49aa547dd9f899805
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: ab55a8241045762448907b464f63483d, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 5cf418933ad53cc43b8517800762db77, type: 2}

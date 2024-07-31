@@ -1,0 +1,480 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Dialogs Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Dialogs
+  m_TableCollectionNameGuidString: 0aecdfb8486242d4487f4c861d86cc6f
+  m_Entries:
+  - m_Id: 22914438967296
+    m_Key: Emma_Abandonment1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914464133120
+    m_Key: Emma_Abandonment2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914464133121
+    m_Key: Anne_Searching
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914464133122
+    m_Key: Anne_Forest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327424
+    m_Key: Emma_Forgotten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327425
+    m_Key: Emma_Understanding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327426
+    m_Key: Emma_ContinuousSearch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327427
+    m_Key: Emma_Hurt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327428
+    m_Key: Emma_LoveAndGrief
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327429
+    m_Key: Emma_NeverAbandoned
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327430
+    m_Key: Anne_Love
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327431
+    m_Key: Emma_Grateful
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327432
+    m_Key: Emma_Readiness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327433
+    m_Key: Anne_Goodbye
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327434
+    m_Key: Anne_Reunited
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327435
+    m_Key: Emma_ThankYou
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327436
+    m_Key: Anne_Completion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327437
+    m_Key: Millie_React
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327438
+    m_Key: Anne_Understanding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327439
+    m_Key: Millie_Shadow
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327440
+    m_Key: Anne_Validation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327441
+    m_Key: Anne_Warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327442
+    m_Key: Millie_Coping
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327443
+    m_Key: Anne_Alternative
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327444
+    m_Key: Millie_Fear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327445
+    m_Key: Anne_Encouragement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327446
+    m_Key: Anne_Hope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327447
+    m_Key: Millie_Reflection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327448
+    m_Key: Millie_Desire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327449
+    m_Key: Anne_Support
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327450
+    m_Key: Millie_Gratitude
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327451
+    m_Key: Rob_JoyRealization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327452
+    m_Key: Anne_DarknessLight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521728
+    m_Key: Rob_MotherSmile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521729
+    m_Key: Rob_Belief
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521730
+    m_Key: Anne_PreciousMemories
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521731
+    m_Key: Rob_Gratitude
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521732
+    m_Key: Anne_Peace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521733
+    m_Key: Rob_ReadyToMoveOn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521734
+    m_Key: Anne_Farewell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521735
+    m_Key: Rob_Thanks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521736
+    m_Key: Anne_Pain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521737
+    m_Key: Millie_Warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521738
+    m_Key: Anne_TriedBest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521739
+    m_Key: Millie_Insufficient
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521740
+    m_Key: Anne_AskToStop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521741
+    m_Key: Millie_Encouragement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521742
+    m_Key: Anne_TryAgain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521743
+    m_Key: Millie_Concentration
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521744
+    m_Key: Anne_Apology
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521745
+    m_Key: RobAngry_Accusation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521746
+    m_Key: Anne_Explanation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521747
+    m_Key: RobAngry_Frustation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521748
+    m_Key: Anne_Desperation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521749
+    m_Key: RobAngry_Doubt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521750
+    m_Key: RobAngry_Suffering
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521751
+    m_Key: Anne_Sorry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521752
+    m_Key: Rob_Urgency
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521753
+    m_Key: Anne_Promise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521754
+    m_Key: Emma_Greeting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521755
+    m_Key: Anne_Introduction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521756
+    m_Key: Emma_Identity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521757
+    m_Key: Anne_Confusion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521758
+    m_Key: Emma_Memory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521759
+    m_Key: Emma_Fog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521760
+    m_Key: Anne_Surprise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521761
+    m_Key: Emma_Park
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521762
+    m_Key: Emma_Promise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521763
+    m_Key: Emma_Abandonment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521764
+    m_Key: Emma_Death
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521765
+    m_Key: Anne_Sympathy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521766
+    m_Key: Emma_Hope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521767
+    m_Key: Emma_AbandonmentAgain
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521768
+    m_Key: Anne_Compassion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521769
+    m_Key: Emma_Pleas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521770
+    m_Key: Anne_Offer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521771
+    m_Key: Emma_Puzzle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521772
+    m_Key: Emma_PuzzlePurpose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521753
+    m_Key: Anne_Promise
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521773
+    m_Key: Anne_Consolation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521774
+    m_Key: Anne_Observation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521775
+    m_Key: Millie_Insight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521776
+    m_Key: Anne_Question
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521777
+    m_Key: Millie_Introduction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521778
+    m_Key: Millie_Mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521757
+    m_Key: Anne_Confusion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521779
+    m_Key: Millie_Instruction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521780
+    m_Key: Millie_Embrace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521781
+    m_Key: Anne_FailureQuestion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521782
+    m_Key: Millie_FailureOutcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521783
+    m_Key: Anne_Resolve
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521737
+    m_Key: Millie_Warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521784
+    m_Key: Millie_Cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521785
+    m_Key: Rob_Hearing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521755
+    m_Key: Anne_Introduction
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521786
+    m_Key: Rob_Identification
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521787
+    m_Key: Anne_Realization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521788
+    m_Key: Rob_Trauma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521765
+    m_Key: Anne_Sympathy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521789
+    m_Key: Rob_Despair
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521790
+    m_Key: Anne14yo_Offer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521791
+    m_Key: Rob_Trauma_Details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521792
+    m_Key: Rob_Loneliness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521793
+    m_Key: Anne_DesireToHelp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521794
+    m_Key: Rob_Distrust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521795
+    m_Key: Anne_GenuineHelp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521796
+    m_Key: Rob_Guidance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521797
+    m_Key: Rob_Warning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521798
+    m_Key: Anne_CarefulStart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521799
+    m_Key: Rob_Caution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521800
+    m_Key: Anne_Teamwork
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521801
+    m_Key: Rob_FreedomDesire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521802
+    m_Key: RobAngry_CardMemory
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7173173882503299131
+  references:
+    version: 2
+    RefIds:
+    - rid: 7173173882503299131
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1722398030554

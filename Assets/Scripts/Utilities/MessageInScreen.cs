@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 [System.Serializable]
 public class Character
@@ -90,11 +92,11 @@ public class MessageInScreen : MonoBehaviour
         messageElement.SetActive(true);
         foreach (var message in messages)
         {
-            currentMessage = message.message;
+            currentMessage = LocalizationSettings.StringDatabase.GetTable("Dialogs").GetEntry(message.message).GetLocalizedString(LocalizationSettings.SelectedLocale);
             UpdateCharacterImage(message.character);
-            UpdateCharacterText(message.message);
+            UpdateCharacterText(currentMessage);
             UpdateCharacterNameTM(message.character);
-            yield return new WaitForSeconds(message.message.Length * writeSpeed);
+            yield return new WaitForSeconds(currentMessage.Length * writeSpeed);
             if(message.options != null) {
                 lastOptionSelected = null;
                 DisplayDialogOptions(message.options);
@@ -113,12 +115,6 @@ public class MessageInScreen : MonoBehaviour
         optionPanel.SetOptions(options, (selectedOptionValue) => {
             lastOptionSelected = selectedOptionValue;
         });
-    }
-
-    private System.Collections.IEnumerator MessageCooldown()
-    {
-        yield return new WaitForSeconds(3);
-        messageElement.SetActive(false);
     }
 
     private void UpdateCharacterImage(string characterName)

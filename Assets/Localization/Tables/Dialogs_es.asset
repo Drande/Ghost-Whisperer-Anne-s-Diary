@@ -1,0 +1,499 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogs_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 0aecdfb8486242d4487f4c861d86cc6f, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 22914438967296
+    m_Localized: "Entonces... no era que me hab\xEDan abandonado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914464133120
+    m_Localized: Ellos me estaban buscando todo el tiempo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914464133121
+    m_Localized: "S\xED, Emma. Tu familia estaba busc\xE1ndote desesperadamente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914464133122
+    m_Localized: "pero el bosque era tan vasto y fr\xEDo..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327424
+    m_Localized: "Siempre pens\xE9 que me hab\xEDan dejado atr\xE1s... que me hab\xEDan
+      olvidado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327425
+    m_Localized: Pero ahora entiendo la verdad.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327426
+    m_Localized: Nunca dejaron de buscarme, aunque no pudieron encontrarme.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327427
+    m_Localized: Oh, duele saber que intentaron tanto pero no pudieron alcanzarme
+      a tiempo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327428
+    m_Localized: Ahora, al mirar este recuerdo, veo su amor y su tristeza.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327429
+    m_Localized: Ellos verdaderamente nunca me abandonaron.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327430
+    m_Localized: "Es importante recordar su amor por ti, incluso en los momentos
+      m\xE1s oscuros."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327431
+    m_Localized: Gracias por ayudarme a ver esto. Me da algo de consuelo saber que
+      se preocuparon tanto.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327432
+    m_Localized: Me siento lista para descansar finalmente ahora. Puedo estar en
+      paz sabiendo que hicieron lo mejor que pudieron.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327433
+    m_Localized: "Me alegra haber podido ayudarte a encontrar esa paz, Emma. Adi\xF3s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327434
+    m_Localized: "y que finalmente te re\xFAnas con tus seres queridos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327435
+    m_Localized: "Adi\xF3s, Anne. Gracias por todo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327436
+    m_Localized: "Millie, lo hice. Complet\xE9 la secuencia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327437
+    m_Localized: "T\xFA... realmente lo lograste. \xBFC\xF3mo lo superaste?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327438
+    m_Localized: "Escuch\xE9 tu dolor, Millie. Intent\xE9 entender por lo que estabas
+      pasando."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327439
+    m_Localized: "Mi dolor ha sido una sombra constante, consumi\xE9ndome."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327440
+    m_Localized: Entiendo. El dolor como el tuyo puede sentirse abrumador.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327441
+    m_Localized: "Pero herirte a ti misma o a otros no lo borrar\xE1. No te liberar\xE1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327442
+    m_Localized: "Sent\xEDa que era la \xFAnica manera de sobrellevarlo. Es todo
+      lo que sab\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327443
+    m_Localized: Hay otras maneras, Millie. Puedes encontrar consuelo sin perpetuar
+      el dolor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327444
+    m_Localized: "Pero, \xBFqu\xE9 pasa si fracaso otra vez? \xBFQu\xE9 pasa si la
+      oscuridad me engulle una vez m\xE1s?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327445
+    m_Localized: "Debes intentarlo, Millie. Cree que mereces m\xE1s que este sufrimiento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327446
+    m_Localized: "Hay esperanza m\xE1s all\xE1 del dolor. Tienes la fuerza para alcanzarla."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327447
+    m_Localized: "Tal vez... Tal vez tienes raz\xF3n. No quiero seguir prisionera
+      de mi angustia."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327448
+    m_Localized: "Quiero encontrar paz y ser amable conmigo misma... y con los dem\xE1s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327449
+    m_Localized: "Puedes hacerlo, Millie. Creo en ti. Estoy aqu\xED para apoyarte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327450
+    m_Localized: "Gracias, Anne. Tus palabras significan m\xE1s de lo que puedo expresar.
+      Intentar\xE9 adoptar un camino m\xE1s amable."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327451
+    m_Localized: "Nunca me di cuenta... tambi\xE9n hubo momentos de alegr\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327452
+    m_Localized: "S\xED, Rob. Incluso en medio de la oscuridad, hubo destellos de
+      luz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521728
+    m_Localized: "Ahora lo veo. Recuerdo la sonrisa de mi madre... y los momentos
+      en los que re\xEDmos juntos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521729
+    m_Localized: "Es dif\xEDcil creer que esos momentos fueron reales, dada toda
+      la dolor que sent\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521730
+    m_Localized: Esos recuerdos son parte de ti, tanto como los dolorosos. Son valiosos.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521731
+    m_Localized: Gracias, Anne. Tu ayuda me ha permitido ver todo esto y encontrar
+      algo de paz.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521732
+    m_Localized: Estoy realmente feliz de haber podido ayudarte, Rob. Te mereces
+      encontrar paz.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521733
+    m_Localized: Creo que estoy listo para seguir adelante ahora. Es hora de dejar
+      ir este dolor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521734
+    m_Localized: "Estar\xE1s bien, Rob. Adi\xF3s, y que encuentres la paz que has
+      estado buscando."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521735
+    m_Localized: "Adi\xF3s, Anne. Y... gracias. Por todo lo que has hecho por m\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521736
+    m_Localized: "\xA1Ah! Duele... \xBFQu\xE9 me est\xE1 pasando?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521737
+    m_Localized: "Prep\xE1rate. Te afectar\xE1 mucho m\xE1s de lo que podr\xEDas
+      esperar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521738
+    m_Localized: "\xA1Pero... hice todo lo que pude!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521739
+    m_Localized: "Tu mejor esfuerzo no fue suficiente. Ahora sientes una fracci\xF3n
+      de mi dolor."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521740
+    m_Localized: "Por favor, Millie... Det\xE9n esto. No quiero ser herida."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521741
+    m_Localized: "Entonces conc\xE9dele atenci\xF3n. Hazlo mejor. Este dolor es un
+      recordatorio de mi sufrimiento. No dejes que sea en vano."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521742
+    m_Localized: "Yo... intentar\xE9 de nuevo. No me rendir\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521743
+    m_Localized: "Bien. Pero recuerda, un error m\xE1s y el dolor ser\xE1 peor. Conc\xE9dele
+      atenci\xF3n, Anne."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521744
+    m_Localized: "Oh no, lo siento mucho. Comet\xED un error..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521745
+    m_Localized: "\xBFQu\xE9 hiciste, Anne?! \xA1Has empeorado todo!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521746
+    m_Localized: "No lo hice a prop\xF3sito. Estaba intentando entender lo mejor
+      que pod\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521747
+    m_Localized: "\xA1Intentarlo no es suficiente! \xA1Esta es mi oportunidad para
+      encontrar paz, y t\xFA lo est\xE1s arruinando!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521748
+    m_Localized: "S\xE9 lo importante que es esto para ti, Rob. Lo s\xE9 de verdad.
+      Por favor, d\xE9jame intentarlo de nuevo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521749
+    m_Localized: "\xBFOtra oportunidad? \xBFCrees que puedo permitirme seguir cometiendo
+      errores?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521750
+    m_Localized: Cada error solo me recuerda lo atrapado que estoy en esta pesadilla.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521751
+    m_Localized: "Entiendo tu frustraci\xF3n. Lamento profundamente haber causado
+      m\xE1s dolor. Por favor, d\xE9jame solucionarlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521752
+    m_Localized: "Est\xE1 bien. Pero tienes que hacerlo bien esta vez. He estado
+      sufriendo durante tanto tiempo, necesito que esto sea correcto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521753
+    m_Localized: "No te preocupes, Emma. Te ayudar\xE9 a resolverlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521754
+    m_Localized: "Hola, \xBFpuedes o\xEDrme?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521755
+    m_Localized: "Mi nombre es Anne. \xBFQui\xE9n eres t\xFA?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521756
+    m_Localized: "Mi nombre es Emma. Yo... no soy como t\xFA. Soy un fantasma."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521757
+    m_Localized: "No estoy segura de entender. \xBFQu\xE9 necesitas de m\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521758
+    m_Localized: No recuerdo todo claramente.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521759
+    m_Localized: "Es como una niebla, pero s\xE9 que ha pasado mucho tiempo. M\xE1s
+      de 50 a\xF1os."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521760
+    m_Localized: "\xBF50 a\xF1os? Eso es tanto tiempo..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521761
+    m_Localized: "S\xED. Estaba con mi familia en el parque."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521762
+    m_Localized: "Est\xE1bamos jugando, y me dijeron que volver\xEDan pronto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521763
+    m_Localized: "Pero nunca regresaron. Camin\xE9 y camin\xE9 para encontrarlos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521764
+    m_Localized: "pero el fr\xEDo lleg\xF3... y yo... me congel\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521765
+    m_Localized: "Lo siento mucho, Rob. Eso suena muy doloroso. \xBFC\xF3mo puedo
+      ayudarte?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521766
+    m_Localized: "Lo estaba. Segu\xEDa esperando que volvieran por m\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521767
+    m_Localized: "pero nunca lo hicieron. Pens\xE9 que me hab\xEDan abandonado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521768
+    m_Localized: "Lo siento mucho, Emma. No puedo imaginar lo doloroso que debi\xF3
+      haber sido."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521769
+    m_Localized: "He estado atrapada aqu\xED desde entonces, incapaz de seguir adelante.
+      Necesito ayuda para encontrar paz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521770
+    m_Localized: "\xBFC\xF3mo puedo ayudarte?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521771
+    m_Localized: "Hay un rompecabezas aqu\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521772
+    m_Localized: "Creo que resolverlo podr\xEDa ayudarme a entender lo que pas\xF3
+      y finalmente dejarme descansar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521773
+    m_Localized: Ya no tienes que estar sola.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521774
+    m_Localized: "Este lugar se siente... tan diferente de los dem\xE1s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521775
+    m_Localized: "T\xFA tambi\xE9n lo sientes, \xBFverdad? El peso de la tristeza,
+      la lucha que persiste."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521776
+    m_Localized: "\xBFQui\xE9n eres t\xFA? \xBFY qu\xE9 pas\xF3 aqu\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521777
+    m_Localized: Soy Millie. Fui consumida por mi propia oscuridad, una prisionera
+      de mi propio dolor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521778
+    m_Localized: Y ahora, debes enfrentarlo como lo hice yo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521779
+    m_Localized: Debes seguir mi camino. Haz exactamente lo que hice, paso a paso.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521780
+    m_Localized: Acepta las mismas acciones, las mismas decisiones.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521781
+    m_Localized: "\xBFQu\xE9 pasa si no sigo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521782
+    m_Localized: "Entonces experimentar\xE1s la misma agon\xEDa que yo pas\xE9. La
+      soledad aplastante y la desesperaci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521783
+    m_Localized: "Har\xE9 lo mejor que pueda. No te decepcionar\xE9, Millie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521784
+    m_Localized: "El viaje ser\xE1 angustiante, y el costo ser\xE1 alto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521785
+    m_Localized: "\xBFQui\xE9n est\xE1 ah\xED? Puedo o\xEDrte..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521786
+    m_Localized: "Soy Rob. Esta es mi casa. \xBFPor qu\xE9 est\xE1s aqu\xED?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521787
+    m_Localized: "\xBFTu casa? No me di cuenta..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521788
+    m_Localized: "S\xED. Sol\xEDa vivir aqu\xED con mi padre. Era... cruel. Me lastimaba."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521789
+    m_Localized: "\xBFAyuda? \xBFC\xF3mo puedes ayudarme? Estoy atrapado aqu\xED,
+      reviviendo los peores momentos de mi vida."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521790
+    m_Localized: "Quiz\xE1s pueda ayudarte a encontrar algo de paz. \xBFPuedes contarme
+      m\xE1s sobre tus recuerdos?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521791
+    m_Localized: "\xBFRecuerdos? Son todos oscuros y retorcidos. Mi padre... me golpeaba
+      por las cosas m\xE1s peque\xF1as."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521792
+    m_Localized: "Pens\xE9 que a nadie le importaba. Pens\xE9 que estaba solo, que
+      nadie me amaba."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521793
+    m_Localized: "Quiero entender lo que pas\xF3. Por favor, d\xE9jame ayudarte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521794
+    m_Localized: "\xBFPor qu\xE9 deber\xEDa confiar en ti? Eres solo otra persona
+      que no entiende."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521795
+    m_Localized: "Realmente quiero ayudar. D\xE9jame intentar aliviar tu sufrimiento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521796
+    m_Localized: "Est\xE1 bien. Mira alrededor de la casa. Hay objetos que desencadenan
+      mis recuerdos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521797
+    m_Localized: "Pero ten cuidado. Si cometes un error, podr\xEDa empeorar las cosas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521798
+    m_Localized: "Ser\xE9 cuidadosa. Empecemos con algo peque\xF1o y veamos qu\xE9
+      encontramos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521799
+    m_Localized: "Est\xE1 bien. Solo no empeores las cosas. He vivido suficiente
+      tormento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521800
+    m_Localized: Prometo ser cuidadosa. Trabajemos en esto juntas.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521801
+    m_Localized: "Est\xE1 bien. Solo quiero estar libre de este dolor..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521802
+    m_Localized: "UH... ESTA TARJETA DESPIERTA UN RECUERDO DOLOROSO PARA M\xCD."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

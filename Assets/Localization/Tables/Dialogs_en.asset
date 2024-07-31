@@ -1,0 +1,493 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Dialogs_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 0aecdfb8486242d4487f4c861d86cc6f, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 22914438967296
+    m_Localized: So... it wasn't that they abandoned me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914464133120
+    m_Localized: They were looking for me all along.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914464133121
+    m_Localized: Yes, Emma. Your family was desperately searching for you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914464133122
+    m_Localized: but the forest was so vast and cold...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327424
+    m_Localized: I had always thought they left me behind... that I was forgotten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327425
+    m_Localized: But now I understand the truth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327426
+    m_Localized: They never stopped searching for me, even though they couldn't find
+      me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327427
+    m_Localized: Oh, it hurts to know they tried so hard but couldn't reach me in
+      time.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327428
+    m_Localized: Now, looking at this memory, I see their love and their grief.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327429
+    m_Localized: They truly never abandoned me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327430
+    m_Localized: It's important to remember their love for you, even in the darkest
+      moments.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327431
+    m_Localized: Thank you for helping me see this. It gives me some comfort to know
+      they cared so much.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327432
+    m_Localized: I feel ready to finally rest now. I can be at peace knowing they
+      did their best.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327433
+    m_Localized: I'm glad I could help you find that peace, Emma. Goodbye
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327434
+    m_Localized: and may you finally be reunited with your loved ones.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327435
+    m_Localized: Goodbye, Anne. Thank you for everything.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327436
+    m_Localized: Millie, I did it. I completed the sequence.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327437
+    m_Localized: You... you actually managed it. How did you overcome it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327438
+    m_Localized: I listened to your pain, Millie. I tried to understand what you
+      were going through.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327439
+    m_Localized: My pain has been a constant shadow, consuming me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327440
+    m_Localized: I understand. Pain like yours can feel all-encompassing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327441
+    m_Localized: But hurting yourself or others won't erase it. It won't set you
+      free.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327442
+    m_Localized: It felt like it was the only way to cope. It's all I knew.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327443
+    m_Localized: There are other ways, Millie. You can find solace without perpetuating
+      the pain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327444
+    m_Localized: But what if I fail again? What if the darkness swallows me once
+      more?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327445
+    m_Localized: You must try, Millie. Believe that you deserve more than this suffering.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327446
+    m_Localized: There's hope beyond the pain. You have the strength to reach it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327447
+    m_Localized: Maybe... Maybe you're right. I don't want to remain imprisoned by
+      my anguish.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327448
+    m_Localized: I want to find peace and be kind to myself... and to others.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327449
+    m_Localized: You can do this, Millie. I believe in you. I'm here to support you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327450
+    m_Localized: Thank you, Anne. Your words mean more than I can express. I'll try
+      to embrace a kinder path.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327451
+    m_Localized: I never realized... there were moments of joy too.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914468327452
+    m_Localized: Yes, Rob. Even amidst the darkness, there were glimpses of light.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521728
+    m_Localized: I can see that now. I remember my mother's smile... and the times
+      we laughed together.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521729
+    m_Localized: It's hard to believe that those moments were real, given all the
+      pain I felt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521730
+    m_Localized: Those memories are a part of you, just as much as the painful ones.
+      They are precious.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521731
+    m_Localized: Thank you, Anne. Your help has allowed me to see all this picture
+      and find some peace.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521732
+    m_Localized: I'm truly glad I could help you, Rob. You deserve to find peace.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521733
+    m_Localized: I think I'm ready to move on now. It's time for me to let go of
+      this pain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521734
+    m_Localized: You'll be alright, Rob. Farewell, and may you find the peace you've
+      been seeking.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521735
+    m_Localized: Goodbye, Anne. And... thank you. For everything you've done for
+      me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521736
+    m_Localized: Ah! It hurts... What is happening to me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521737
+    m_Localized: Be prepared. It will take a toll on you, much more than you might
+      expect.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521738
+    m_Localized: But... I tried my best!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521739
+    m_Localized: Your best wasn't good enough. Now you feel a fraction of my pain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521740
+    m_Localized: Please, Millie... Stop this. I don't want to be hurt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521741
+    m_Localized: Then focus. Do better. This pain is a reminder of my suffering.
+      Don't let it be in vain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521742
+    m_Localized: I... I'll try again. I won't give up.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521743
+    m_Localized: Good. But remember, one more mistake and the pain will be worse.
+      Concentrate, Anne.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521744
+    m_Localized: Oh no, I'm so sorry. I made a mistake...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521745
+    m_Localized: What did you do, Anne?! You've made everything worse!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521746
+    m_Localized: I didn't mean to. I was trying my best to understand.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521747
+    m_Localized: Trying isn't enough! This is my chance to find peace, and you're
+      ruining it!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521748
+    m_Localized: I know how important this is to you, Rob. I truly do. Please, let
+      me try again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521749
+    m_Localized: Another chance? Do you think I can afford to keep making mistakes?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521750
+    m_Localized: Every wrong move just reminds me of how trapped I am in this nightmare.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521751
+    m_Localized: I understand your frustration. I'm deeply sorry for causing more
+      pain. Please, let me fix this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521752
+    m_Localized: Fine. But you need to get it right this time. I've been suffering
+      for so long, I need this to be right.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521753
+    m_Localized: Don't worry, Emma. I'll help you solve it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521754
+    m_Localized: Hello, can you hear me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521755
+    m_Localized: My name is Anne. Who are you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521756
+    m_Localized: My name is Emma. I'm... I'm not like you. I'm a ghost.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521757
+    m_Localized: I'm not sure I understand. What do you need from me?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521758
+    m_Localized: I don't remember everything clearly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521759
+    m_Localized: It's like a fog, but I know it's been a long time. More than 50
+      years.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521760
+    m_Localized: 50 years? That's such a long time...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521761
+    m_Localized: Yes. I was with my family in the park.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521762
+    m_Localized: We were playing, and they told me they'd be back soon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521763
+    m_Localized: But they never returned. I walk and walk to find them
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521764
+    m_Localized: but the cold came... and I... I froze.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521765
+    m_Localized: I'm so sorry, Rob. That sounds so painful. How can I help you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521766
+    m_Localized: I was. I kept hoping they'd come back for me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521767
+    m_Localized: but they never did. I thought they abandoned me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521768
+    m_Localized: I'm so sorry, Emma. I can't imagine how painful that must have been.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521769
+    m_Localized: I've been stuck here ever since, unable to move on. I need help
+      to find peace.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521770
+    m_Localized: How can I help you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521771
+    m_Localized: There's a puzzle here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521772
+    m_Localized: I think solving it might help me understand what happened and finally
+      let me rest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521773
+    m_Localized: You don't have to be alone anymore.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521774
+    m_Localized: This place feels... so different from the others.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521775
+    m_Localized: You can sense it too, can't you? The weight of sorrow, the struggle
+      that lingers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521776
+    m_Localized: Who are you? And what happened here?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521777
+    m_Localized: I am Millie. I was consumed by my own darkness, a prisoner of my
+      own pain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521778
+    m_Localized: And now, you must face it as I did.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521779
+    m_Localized: You must follow my path. Do exactly as I did, step by step.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521780
+    m_Localized: Embrace the same actions, the same choices.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521781
+    m_Localized: What happens if I fail to follow?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521782
+    m_Localized: Then you'll experience the same agony I went through. The crushing
+      loneliness and despair.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521783
+    m_Localized: I'll try my best. I won't let you down, Millie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521784
+    m_Localized: The journey will be harrowing, and the cost will be high.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521785
+    m_Localized: Who's there? I can hear you...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521786
+    m_Localized: I'm Rob. This is my house. Why are you here?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521787
+    m_Localized: Your house? I didn't realize...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521788
+    m_Localized: Yes. I used to live here with my father. He was... cruel. He hurt
+      me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521789
+    m_Localized: Help? How can you help me? I'm stuck here, reliving the worst moments
+      of my life.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521790
+    m_Localized: Maybe I can help you find some peace. Can you tell me more about
+      your memories?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521791
+    m_Localized: Memories? They're all dark and twisted. My father... he beat me
+      for the smallest things.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521792
+    m_Localized: I thought no one cared. I thought I was alone, that nobody loved
+      me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521793
+    m_Localized: I want to understand what happened. Please, let me help you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521794
+    m_Localized: Why should I trust you? You're just another person who doesn't understand.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521795
+    m_Localized: I genuinely want to help. Let me try to ease your suffering.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521796
+    m_Localized: Fine. Look around the house. There are objects that trigger my memories.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521797
+    m_Localized: But be careful. If you make a mistake, it might make things worse.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521798
+    m_Localized: I'll be careful. Let's start with something small and see what we
+      find.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521799
+    m_Localized: Alright. Just don't make things worse. I've lived through enough
+      torment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521800
+    m_Localized: I promise to be careful. Let's work through this together.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521801
+    m_Localized: Fine. I just want to be free of this pain...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22914472521802
+    m_Localized: UH... THIS CARD STIRS UP A PAINFUL MEMORY FOR ME.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
