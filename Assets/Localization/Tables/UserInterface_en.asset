@@ -34,6 +34,18 @@ MonoBehaviour:
     m_Localized: About
     m_Metadata:
       m_Items: []
+  - m_Id: 256920128499712
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257255387607040
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257388443512832
+    m_Localized: Music
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

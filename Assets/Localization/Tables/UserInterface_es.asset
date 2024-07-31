@@ -27,11 +27,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9450253365248
-    m_Localized: "Configuraci\xF3n"
+    m_Localized: Configuracion
     m_Metadata:
       m_Items: []
   - m_Id: 9495790923776
     m_Localized: Acerca de
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256920128499712
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257255387607040
+    m_Localized: Sonido
+    m_Metadata:
+      m_Items: []
+  - m_Id: 257388443512832
+    m_Localized: Musica
     m_Metadata:
       m_Items: []
   references:
