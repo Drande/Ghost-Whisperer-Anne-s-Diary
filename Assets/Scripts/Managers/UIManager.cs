@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,12 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider sfxVolumeSlider;
     [SerializeField] private MenuScreen[] menuScreens;
     [SerializeField] private Button continueButton;
+    [SerializeField] private GameObject textGameTitle;
+    [SerializeField] private GameObject btnStart;
+    [SerializeField] private GameObject btnContinue;
+    [SerializeField] private GameObject btnSettings;
+    [SerializeField] private GameObject btnAbout;
+    [SerializeField] private bool MovingToAnotherScreen = false;
 
     private void Awake() {
         if(Instance == null) {
@@ -50,14 +57,44 @@ public class UIManager : MonoBehaviour
         foreach (var menuScreen in menuScreens)
         {
             if(menuScreen.name == name) {
-                if(!menuScreen.screen.activeInHierarchy)
+                if (!menuScreen.screen.activeInHierarchy) 
+                {
+                    if (MovingToAnotherScreen) 
+                    {
+                        Invoke("ShowButtons", 1f);
+                        MovingToAnotherScreen = false;
+                    }
                     StartCoroutine(Coroutines.FadeIn(menuScreen.screen));
+                }
             }
             else {
-                if(menuScreen.screen.activeInHierarchy)
+                if (menuScreen.screen.activeInHierarchy) 
+                {
+                    Invoke("HideButtons", 0f);
                     StartCoroutine(Coroutines.FadeOut(menuScreen.screen));
+
+                    MovingToAnotherScreen = true;
+                } 
             }
         }
+    }
+
+    private void ShowButtons()
+    {
+        textGameTitle.SetActive(true);
+        btnStart.SetActive(true);
+        btnContinue.SetActive(true);
+        btnSettings.SetActive(true);
+        btnAbout.SetActive(true);
+    }
+
+    private void HideButtons()
+    {
+        textGameTitle.SetActive(false);
+        btnStart.SetActive(false);
+        btnContinue.SetActive(false);
+        btnSettings.SetActive(false);
+        btnAbout.SetActive(false);
     }
 
     private void OnDestroy()
