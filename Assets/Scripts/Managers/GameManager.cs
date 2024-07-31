@@ -102,20 +102,20 @@ public class GameManager : MonoBehaviour
     public void LoadPuzzle() 
     {
         if(MessageInScreen.Instance.isActive) return;
-        MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, () => {
+        MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, (_) => {            
             LoadMinigame(GameScenes.PuzzleAssembly);
         });
     }
   
     public void LoadMemory() {
         if (MessageInScreen.Instance.isActive) return;
-        MessageInScreen.Instance.StartDialog(ChapterTwoDialogs.Start, () => {
+        MessageInScreen.Instance.StartDialog(ChapterTwoDialogs.Start, (_) => {
             LoadMinigame(GameScenes.MemoryMatch);
         });
     }
 
     public void LoadSimon() {
-        MessageInScreen.Instance.StartDialog(ChapterThreeDialogs.Start, () => {
+        MessageInScreen.Instance.StartDialog(ChapterThreeDialogs.Start, (_) => {
             LoadMinigame(GameScenes.SimonSays);
         });
     }

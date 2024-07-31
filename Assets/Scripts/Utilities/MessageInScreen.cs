@@ -11,20 +11,6 @@ public class Character
     public Sprite characterSprite;
 }
 
-public class Message
-{
-    public Message(string character, string message)
-    {
-        this.character = character;
-        this.message = message;
-    }
-
-    public string character { get; set; } = CharacterNames.Rob;
-    public string message { get; set; }
-}
-
-
-
 public class MessageInScreen : MonoBehaviour
 {
     public static MessageInScreen Instance { get; private set; }
@@ -36,10 +22,12 @@ public class MessageInScreen : MonoBehaviour
     [SerializeField] private string skipButton = "Fire1";
     [SerializeField] private float writeSpeed = 0.06f;
     [SerializeField] private float fixedSecondsDelay = 1f;
+    [SerializeField] private OptionPanel optionPanel;
+    private string lastOptionSelected;
     private Coroutine textWriter;
     private Coroutine currentDialog;
     private string currentMessage;
-    public event Action onDialogCompleted;
+    public event Action<string> onDialogCompleted;
 
     [HideInInspector] public bool isActive => messageElement.activeInHierarchy;
 
@@ -60,8 +48,10 @@ public class MessageInScreen : MonoBehaviour
     {
         if(!isActive) return;
         if(Input.GetButtonDown(skipButton)) {
-            StopCoroutine(textWriter);
-            characterText.text = currentMessage;
+            if(textWriter != null) {
+                StopCoroutine(textWriter);
+                characterText.text = currentMessage;
+            }
         }
     }
 
@@ -70,10 +60,15 @@ public class MessageInScreen : MonoBehaviour
         messageElement.SetActive(false);
     }
 
-    public void StartDialog(Message[] messages, System.Action onCompleted)
+    public void StartDialog(Message[] messages)
+    {
+        currentDialog = StartCoroutine(WriteDialog(messages));
+    }
+
+    public void StartDialog(Message[] messages, Action<string> onCompleted)
     {
         onDialogCompleted += onCompleted;
-        currentDialog = StartCoroutine(DialogCooldown(messages));
+        currentDialog = StartCoroutine(WriteDialog(messages));
     }
 
     public void SkipCurrentDialog()
@@ -81,16 +76,16 @@ public class MessageInScreen : MonoBehaviour
         if(currentDialog != null) StopCoroutine(currentDialog);
         if(textWriter != null) StopCoroutine(textWriter);
         if(GameManager.Instance.isPaused) GameManager.Instance.TogglePause();
-        NotifyComplete();
+        NotifyComplete(null);
     }
 
-    private void NotifyComplete() {
+    private void NotifyComplete(string result) {
         messageElement.SetActive(false);
-        onDialogCompleted?.Invoke();
+        onDialogCompleted?.Invoke(result);
         onDialogCompleted = null;
     }
 
-    private System.Collections.IEnumerator DialogCooldown(Message[] messages)
+    private System.Collections.IEnumerator WriteDialog(Message[] messages)
     {
         messageElement.SetActive(true);
         foreach (var message in messages)
@@ -98,12 +93,27 @@ public class MessageInScreen : MonoBehaviour
             currentMessage = message.message;
             UpdateCharacterImage(message.character);
             UpdateCharacterText(message.message);
-            UpdateCharacterNameTM(message.character); 
-            yield return new WaitForSeconds((message.message.Length * writeSpeed) + fixedSecondsDelay);
+            UpdateCharacterNameTM(message.character);
+            yield return new WaitForSeconds(message.message.Length * writeSpeed);
+            if(message.options != null) {
+                lastOptionSelected = null;
+                DisplayDialogOptions(message.options);
+                while(string.IsNullOrEmpty(lastOptionSelected)) {
+                    yield return null;
+                }
+            } else {
+                yield return new WaitForSeconds(fixedSecondsDelay);
+            }
         }
-        NotifyComplete();
+        NotifyComplete(lastOptionSelected);
     }
 
+    private void DisplayDialogOptions(DialogOption[] options)
+    {
+        optionPanel.SetOptions(options, (selectedOptionValue) => {
+            lastOptionSelected = selectedOptionValue;
+        });
+    }
 
     private System.Collections.IEnumerator MessageCooldown()
     {

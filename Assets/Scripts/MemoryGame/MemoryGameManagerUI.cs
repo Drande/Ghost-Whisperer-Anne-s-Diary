@@ -87,7 +87,7 @@ public class MemoryGameManagerUI : MonoBehaviour
     private void StartAfterChapterTwoDialog()
     {
         if (MessageInScreen.Instance.isActive) return;
-        MessageInScreen.Instance.StartDialog(AfterChapterTwoDialogs.Start, () => {
+        MessageInScreen.Instance.StartDialog(AfterChapterTwoDialogs.Start, (_) => {
             GameManager.Instance.BackToGame(true);
         });
     }
