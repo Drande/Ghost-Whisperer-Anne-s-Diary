@@ -529,11 +529,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 401012238393351
-    m_Localized: "Decirle a Rob que tendr\xE1s cuidado."
+    m_Localized: "Tendr\xE9 cuidado."
     m_Metadata:
       m_Items: []
   - m_Id: 401012238393352
-    m_Localized: "Decirle a Rob que tomar\xE1s un tiempo antes de ayudarlo."
+    m_Localized: "Me tomar\xE9 un tiempo."
     m_Metadata:
       m_Items: []
   - m_Id: 401012238393353

@@ -104,9 +104,21 @@ public class GameManager : MonoBehaviour
         LoadMinigame(GameScenes.PuzzleAssembly);
     }
 
-    public void LoadMemory() 
+    public void LoadMemory(DialogData dialog)
     {
-        LoadMinigame(GameScenes.MemoryMatch);
+        if (dialog != null)
+        {
+            MessageInScreen.Instance.StartDialog(dialog.messages, (_) =>
+            {
+                LoadMinigame(GameScenes.MemoryMatch);
+
+            });
+        }
+        else
+        {
+            LoadMinigame(GameScenes.MemoryMatch);
+
+        }
     }
 
     public void LoadSimon(DialogData dialog) 
