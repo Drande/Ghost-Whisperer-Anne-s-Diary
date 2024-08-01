@@ -10,7 +10,7 @@ public class CharacterInteractions : MonoBehaviour {
         if(!interactables.Any()) return;
 
         if(Input.GetKeyDown(KeyCode.E)) {
-            var movement = GameObject.Find("Player").GetComponent<PlayerInput>();
+            var movement = GameObject.FindWithTag("Player").GetComponent<PlayerInput>();
             movement.enabled = false;
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

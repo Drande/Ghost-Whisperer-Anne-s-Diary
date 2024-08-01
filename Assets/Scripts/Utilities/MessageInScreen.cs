@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Localization.Settings;
+using System.Linq;
 
 [System.Serializable]
 public class Character
@@ -102,7 +103,7 @@ public class MessageInScreen : MonoBehaviour
             UpdateCharacterText(currentMessage);
             UpdateCharacterNameTM(message.character);
             yield return new WaitForSeconds(currentMessage.Length * writeSpeed);
-            if(message.options != null) {
+            if(message.options != null && message.options.Any()) {
                 lastOptionSelected = null;
                 DisplayDialogOptions(message.options);
                 while(string.IsNullOrEmpty(lastOptionSelected)) {
