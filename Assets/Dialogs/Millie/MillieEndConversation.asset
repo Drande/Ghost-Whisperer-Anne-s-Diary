@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47226e134f16084f9422da2a5d9909d, type: 3}
+  m_Name: MillieEndConversation
+  m_EditorClassIdentifier: 
+  messages:
+  - character: 0
+    message: Anne_Completion
+    options: []
+  - character: 4
+    message: Millie_React
+    options: []
+  - character: 0
+    message: Anne_Understanding
+    options: []
+  - character: 4
+    message: Millie_Shadow
+    options: []
+  - character: 0
+    message: Anne_Validation
+    options: []
+  - character: 0
+    message: Anne_Warning
+    options: []
+  - character: 4
+    message: Millie_Coping
+    options: []
+  - character: 0
+    message: Anne_Alternative
+    options: []
+  - character: 4
+    message: Millie_Fear
+    options: []
+  - character: 0
+    message: Anne_Encouragement
+    options: []
+  - character: 0
+    message: Anne_Hope
+    options: []
+  - character: 4
+    message: Millie_Reflection
+    options: []
+  - character: 4
+    message: Millie_Desire
+    options: []
+  - character: 0
+    message: Anne_Support
+    options: []
+  - character: 4
+    message: Millie_Gratitude
+    options: []

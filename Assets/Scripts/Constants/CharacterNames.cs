@@ -11,19 +11,17 @@ public static class CharacterNames
     public const string Emma = "Emma";
     public const string RobAngry = "RobAngry";
 
-    public static readonly Dictionary<string, string> CharacterNameMap = new Dictionary<string, string>
+    public static readonly Dictionary<GameCharacters, string> CharacterNameMap = new Dictionary<GameCharacters, string>
     {
-        { Anne7yo, "Anne" },
-        { Anne14yo, "Anne" },
-        { Anne20yo, "Anne" },
-        { AnneDefeated, "Anne" },
-        { Rob, "Rob" },
-        { Millie, "Millie" },
-        { Emma, "Emma" },
-        { RobAngry, "Rob" }
+        { GameCharacters.Anne, "Anne" },
+        { GameCharacters.AnneDefeated, "Anne" },
+        { GameCharacters.Rob, "Rob" },
+        { GameCharacters.Millie, "Millie" },
+        { GameCharacters.Emma, "Emma" },
+        { GameCharacters.RobAngry, "Rob" }
     };
 
-    public static string GetRealName(string name) 
+    public static string GetRealName(GameCharacters name) 
     {
         return CharacterNameMap[name] ?? "Unknown"; 
     }

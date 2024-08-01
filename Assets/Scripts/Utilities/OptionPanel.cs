@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class OptionPanel : MonoBehaviour
@@ -15,8 +16,9 @@ public class OptionPanel : MonoBehaviour
             var placeholder = optionPlaceholders[i];
             if(i < options.Length) {
                 var option = options[i];
+                var label = LocalizationSettings.StringDatabase.GetTable("Dialogs").GetEntry(option.label).GetLocalizedString(LocalizationSettings.SelectedLocale);
                 placeholder.gameObject.SetActive(true);
-                placeholder.GetComponentInChildren<TextMeshProUGUI>().text = option.label;
+                placeholder.GetComponentInChildren<TextMeshProUGUI>().text = label;
                 placeholder.onClick.AddListener(() => {
                     OnChoiceMade();
                     onChoiceSelected?.Invoke(option.value);

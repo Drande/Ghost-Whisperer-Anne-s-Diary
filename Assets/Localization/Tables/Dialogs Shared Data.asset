@@ -467,6 +467,78 @@ MonoBehaviour:
     m_Key: RobAngry_CardMemory
     m_Metadata:
       m_Items: []
+  - m_Id: 401012196450304
+    m_Key: Anne_FirstChoice_HelpEmma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393344
+    m_Key: Anne_SecondChoice_ExploreTheWorld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393345
+    m_Key: Anne_ThirdChoice_Clue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393346
+    m_Key: Emma_Clue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393347
+    m_Key: Anne_FirstChoice_Emma_Words of Comfort
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393348
+    m_Key: Anne_Congrats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393349
+    m_Key: Anne_ComfortWords
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393350
+    m_Key: Anne_SecondChoice_SayBye
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393351
+    m_Key: Anne_FirstChoice_Rob_Words of Careful
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393352
+    m_Key: Anne_SecondChoice_TakeTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393353
+    m_Key: Anne_TakeTime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393354
+    m_Key: Rob_RudeAnswer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393355
+    m_Key: Anne_FirstChoice_DoMyBest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587648
+    m_Key: Anne_AgreeRob
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587649
+    m_Key: Anne_SecondChoice_Leave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587650
+    m_Key: Anne_FirstChoice_TakeTheRisk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587651
+    m_Key: Anne_SecondChoice_DontTakeTheRisk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587652
+    m_Key: Millie_HaveTo
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

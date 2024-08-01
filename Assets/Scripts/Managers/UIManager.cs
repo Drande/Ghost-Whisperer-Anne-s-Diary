@@ -11,7 +11,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider sfxVolumeSlider;
     [SerializeField] private MenuScreen[] menuScreens;
     [SerializeField] private Button continueButton;
-    [SerializeField] private bool MovingToAnotherScreen = false;
     [SerializeField] private TMP_Dropdown languageDropdown;
     private const string PlayerPrefKey = "SelectedLanguage";
 
@@ -59,22 +58,14 @@ public class UIManager : MonoBehaviour
             if(menuScreen.name == name) {
                 if (!menuScreen.screen.activeInHierarchy) 
                 {
-                    if (MovingToAnotherScreen) 
-                    {
-                        Invoke("ShowButtons", 1f);
-                        MovingToAnotherScreen = false;
-                    }
                     StartCoroutine(Coroutines.FadeIn(menuScreen.screen));
                 }
             }
             else {
                 if (menuScreen.screen.activeInHierarchy) 
                 {
-                    Invoke("HideButtons", 0f);
                     StartCoroutine(Coroutines.FadeOut(menuScreen.screen));
-
-                    MovingToAnotherScreen = true;
-                } 
+                }
             }
         }
     }
