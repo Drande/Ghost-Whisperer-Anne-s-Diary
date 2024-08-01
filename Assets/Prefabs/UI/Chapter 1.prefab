@@ -830,6 +830,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7327982957153659957, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadPuzzle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
 --- !u!224 &4704466917712393226 stripped
@@ -852,9 +856,17 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 67422c8e47251184388c23a37c7e72c2, type: 3}
+    - target: {fileID: 5881122423010415934, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5881122423010415934, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6446403623491399620, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7258411658849098757, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
       propertyPath: m_Pivot.x
@@ -939,6 +951,18 @@ PrefabInstance:
     - target: {fileID: 7258411658849098757, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327982957153659957, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327982957153659957, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackToTitle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327982957153659957, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
