@@ -1131,8 +1131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6fcebb03a825b4b85f87dafbdc870d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enabledSprite: {fileID: 21300000, guid: 3ec25e190ab435345bf2216110546521, type: 3}
-  disabledSprite: {fileID: 21300000, guid: 70c55e4242487b3469364f3c1e166b2e, type: 3}
+  enabledSprite: {fileID: 21300000, guid: faab38b15da28c945aebd3ee55dbf5d5, type: 3}
+  disabledSprite: {fileID: 21300000, guid: 67422c8e47251184388c23a37c7e72c2, type: 3}
 --- !u!114 &5907211681137645562
 MonoBehaviour:
   m_ObjectHideFlags: 0
