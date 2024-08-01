@@ -40,7 +40,7 @@ public class ScatterSounds : MonoBehaviour
             if(timer <= 0)
             {
                 source.clip = sounds[Random.Range(0, sounds.Length)];
-                source.volume = Random.Range(1 - volumeChangeMultiplier, 1);
+                source.volume = Random.Range(0.7f - volumeChangeMultiplier, 0.7f + volumeChangeMultiplier);
                 source.pitch = Random.Range(1 - pitchChangeMultiplier, 1 + pitchChangeMultiplier);
                 source.PlayOneShot(source.clip);
                 timer = Random.Range(minTime, maxTime);

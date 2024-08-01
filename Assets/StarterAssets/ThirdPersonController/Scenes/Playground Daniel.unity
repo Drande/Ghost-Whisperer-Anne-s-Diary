@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ambSource: {fileID: 789261658}
-  ambClip: {fileID: 8300000, guid: 82af3f896a53f024cb0bf9631ccc28fb, type: 3}
+  ambClip: {fileID: 8300000, guid: f6a94469b43cc3f46b05737ed80a10c3, type: 3}
 --- !u!65 &789261660
 BoxCollider:
   m_ObjectHideFlags: 0
