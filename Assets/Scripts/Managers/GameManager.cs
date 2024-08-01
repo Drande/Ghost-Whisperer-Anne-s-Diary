@@ -99,6 +99,10 @@ public class GameManager : MonoBehaviour
         LoadScene(GameScenes.MainMenu);
     }
 
+    public void NavigateToWorld() {
+        LoadScene(GameScenes.World);
+    }
+
     public void LoadPuzzle() 
     {
         LoadMinigame(GameScenes.PuzzleAssembly);
