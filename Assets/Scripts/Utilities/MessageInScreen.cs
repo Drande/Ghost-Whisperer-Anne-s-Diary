@@ -28,6 +28,8 @@ public class MessageInScreen : MonoBehaviour
     private string lastOptionSelected;
     private Coroutine textWriter;
     private Coroutine currentDialog;
+    private Message skipToMessage;
+    private Message[] currentDialogMessages;
     private string currentMessage;
     public event Action<string> onDialogCompleted;
 
@@ -75,19 +77,27 @@ public class MessageInScreen : MonoBehaviour
     public void StartDialog(Message[] messages, Action<string> onCompleted)
     {
         onDialogCompleted += onCompleted;
+        currentDialogMessages = messages;
         currentDialog = StartCoroutine(WriteDialog(messages));
     }
 
     public void SkipCurrentDialog()
     {
-        if(currentDialog != null) StopCoroutine(currentDialog);
-        if(textWriter != null) StopCoroutine(textWriter);
-        if(GameManager.Instance.isPaused) GameManager.Instance.TogglePause();
-        NotifyComplete(null);
+        var nextChoice = currentDialogMessages.FirstOrDefault(m => m.options.Any());
+        if(nextChoice != null) {
+            skipToMessage = nextChoice;
+            StopCoroutine(textWriter);
+        } else {
+            if(currentDialog != null) StopCoroutine(currentDialog);
+            if(textWriter != null) StopCoroutine(textWriter);
+            if(GameManager.Instance.isPaused) GameManager.Instance.TogglePause();
+            NotifyComplete(null);
+        }
     }
 
     private void NotifyComplete(string result) {
         messageElement.SetActive(false);
+        skipToMessage = null;
         var temp = onDialogCompleted; // Allow nested dialogs
         onDialogCompleted = null;
         temp?.Invoke(result);
@@ -98,6 +108,11 @@ public class MessageInScreen : MonoBehaviour
         messageElement.SetActive(true);
         foreach (var message in messages)
         {
+            if(skipToMessage != null && message.message != skipToMessage.message) {
+                continue;
+            } else if(skipToMessage != null) {
+                skipToMessage = null;
+            }
             currentMessage = LocalizationSettings.StringDatabase.GetTable("Dialogs").GetEntry(message.message).GetLocalizedString(LocalizationSettings.SelectedLocale);
             UpdateCharacterImage(message.character);
             UpdateCharacterText(currentMessage);
