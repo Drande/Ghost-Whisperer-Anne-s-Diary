@@ -76,6 +76,7 @@ public class MessageInScreen : MonoBehaviour
 
     public void StartDialog(Message[] messages, Action<string> onCompleted)
     {
+        StopAllCoroutines();
         onDialogCompleted += onCompleted;
         currentDialogMessages = messages;
         currentDialog = StartCoroutine(WriteDialog(messages));
