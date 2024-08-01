@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47226e134f16084f9422da2a5d9909d, type: 3}
+  m_Name: Emma_End
+  m_EditorClassIdentifier: 
+  messages:
+  - character: 1
+    message: Emma_Abandonment1
+    options: []
+  - character: 1
+    message: Emma_Abandonment2
+    options: []
+  - character: 1
+    message: Anne_Searching
+    options: []
+  - character: 1
+    message: Anne_Forest
+    options: []
+  - character: 1
+    message: Emma_Forgotten
+    options: []
+  - character: 1
+    message: Emma_Understanding
+    options: []
+  - character: 1
+    message: Emma_ContinuousSearch
+    options: []
+  - character: 1
+    message: Emma_Hurt
+    options: []
+  - character: 1
+    message: Emma_LoveAndGrief
+    options: []
+  - character: 1
+    message: Emma_NeverAbandoned
+    options: []
+  - character: 1
+    message: Anne_Love
+    options: []
+  - character: 1
+    message: Emma_Grateful
+    options: []
+  - character: 1
+    message: Emma_Readiness
+    options:
+    - label: Anne_FirstChoice_Emma_Words of Comfort
+      value: 0
+    - label: Anne_SecondChoice_SayBye
+      value: 1
