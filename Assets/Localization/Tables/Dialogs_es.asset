@@ -494,6 +494,80 @@ MonoBehaviour:
     m_Localized: "UH... ESTA TARJETA DESPIERTA UN RECUERDO DOLOROSO PARA M\xCD."
     m_Metadata:
       m_Items: []
+  - m_Id: 401012196450304
+    m_Localized: Ayudar a Emma.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393344
+    m_Localized: Explorar el mundo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393345
+    m_Localized: "\xBFSabes algo sobre el puzzle?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393346
+    m_Localized: "S\xED, luce como una foto que tienes que armar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393347
+    m_Localized: "D\xED palabras de consuelo a Emma"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393348
+    m_Localized: Emma, lo hicimos. Ahora puedes ver que nunca te abandonaron, que
+      siempre estuviste en sus corazones.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393349
+    m_Localized: "S\xE9 que nada puede borrar el dolor que has sentido, pero quiero
+      que sepas que has encontrado la verdad, y con ella, la paz."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393350
+    m_Localized: Chao, Emma.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393351
+    m_Localized: "Decirle a Rob que tendr\xE1s cuidado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393352
+    m_Localized: "Decirle a Rob que tomar\xE1s un tiempo antes de ayudarlo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393353
+    m_Localized: "Creo que lo mejor ser\xE1 que me tome un tiempo antes de ayudarte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393354
+    m_Localized: Vale, haz lo que quieras.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393355
+    m_Localized: "Decirle a Rob que lo intentar\xE1s nuevamente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587648
+    m_Localized: "S\xED, Rob, lo intentar\xE9 de nuevo y dar\xE9 lo mejor de m\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587649
+    m_Localized: Irte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587650
+    m_Localized: "Tomar\xE9 el riesgo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587651
+    m_Localized: "No me arriesgar\xE9, Millie."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587652
+    m_Localized: Tienes que ayudarme, no hay manera de evitarme.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

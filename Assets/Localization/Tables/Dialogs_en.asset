@@ -488,6 +488,80 @@ MonoBehaviour:
     m_Localized: UH... THIS CARD STIRS UP A PAINFUL MEMORY FOR ME.
     m_Metadata:
       m_Items: []
+  - m_Id: 401012196450304
+    m_Localized: Help Emma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393344
+    m_Localized: Explore the world.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393345
+    m_Localized: Do you know anything about the puzzle?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393346
+    m_Localized: Yes, it looks like a picture you have to put together.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393347
+    m_Localized: Say Words of comfort to Emma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393348
+    m_Localized: Emma, we did it. Now you can see that they never abandoned you,
+      that you were always in their hearts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393349
+    m_Localized: I know nothing can erase the pain you've felt, but I want you to
+      know that you've found the truth, and with it, peace.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393350
+    m_Localized: Bye, Emma.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393351
+    m_Localized: Say to Rob You will be careful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393352
+    m_Localized: Say to Rob You will take a time before help you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393353
+    m_Localized: I think it might be best to take some time before helping you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393354
+    m_Localized: Ok, do whatever you want.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012238393355
+    m_Localized: Say to Rob you will try it again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587648
+    m_Localized: Yes, Rob, I will try it again and I'll do my best
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587649
+    m_Localized: Leave.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587650
+    m_Localized: I will take the risk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587651
+    m_Localized: I will not take the risk, Millie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401012242587652
+    m_Localized: You have to help me, there's no way out of this.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
