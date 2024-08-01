@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6154015177427093086, guid: ca790aad697b3634e9c46bb41b702d68, type: 3}
       propertyPath: m_Name
-      value: Back To Title Arrow
+      value: Back To Title Arrow Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca790aad697b3634e9c46bb41b702d68, type: 3}
