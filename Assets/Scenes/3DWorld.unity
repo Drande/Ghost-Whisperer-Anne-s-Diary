@@ -8014,6 +8014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 582130815}
+  - component: {fileID: 582130816}
   m_Layer: 0
   m_Name: Potions
   m_TagString: Untagged
@@ -8038,6 +8039,19 @@ Transform:
   m_Father: {fileID: 34113126}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &582130816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582130814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583ee0f9e0cb5664baf8af233bd830d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chapter: 2
 --- !u!1001 &585103891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9330,6 +9344,7 @@ GameObject:
   - component: {fileID: 716579198}
   - component: {fileID: 716579196}
   - component: {fileID: 716579199}
+  - component: {fileID: 716579200}
   m_Layer: 0
   m_Name: Belt
   m_TagString: Untagged
@@ -9422,6 +9437,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &716579200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716579194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583ee0f9e0cb5664baf8af233bd830d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chapter: 1
 --- !u!1 &716842750
 GameObject:
   m_ObjectHideFlags: 0
@@ -21183,6 +21211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1505154699}
+  - component: {fileID: 1505154700}
   m_Layer: 0
   m_Name: NewsPapers
   m_TagString: Untagged
@@ -21207,6 +21236,19 @@ Transform:
   m_Father: {fileID: 34113126}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505154700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505154698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583ee0f9e0cb5664baf8af233bd830d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chapter: 0
 --- !u!1 &1505383582
 GameObject:
   m_ObjectHideFlags: 0
