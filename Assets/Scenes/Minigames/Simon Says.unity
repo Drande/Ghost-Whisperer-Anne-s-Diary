@@ -675,10 +675,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minigame UI
       objectReference: {fileID: 0}
-    - target: {fileID: 4644746534866255529, guid: c9f4fba83b9adc043ac3a1f5cfee1e4f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e8b5513bb9562fc4ab11681601b6d24e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9f4fba83b9adc043ac3a1f5cfee1e4f, type: 3}
 --- !u!1001 &1027643877
