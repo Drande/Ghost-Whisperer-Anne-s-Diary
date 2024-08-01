@@ -11,11 +11,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider sfxVolumeSlider;
     [SerializeField] private MenuScreen[] menuScreens;
     [SerializeField] private Button continueButton;
-    [SerializeField] private GameObject textGameTitle;
-    [SerializeField] private GameObject btnStart;
-    [SerializeField] private GameObject btnContinue;
-    [SerializeField] private GameObject btnSettings;
-    [SerializeField] private GameObject btnAbout;
     [SerializeField] private bool MovingToAnotherScreen = false;
     [SerializeField] private TMP_Dropdown languageDropdown;
     private const string PlayerPrefKey = "SelectedLanguage";
@@ -82,24 +77,6 @@ public class UIManager : MonoBehaviour
                 } 
             }
         }
-    }
-
-    private void ShowButtons()
-    {
-        textGameTitle.SetActive(true);
-        btnStart.SetActive(true);
-        btnContinue.SetActive(true);
-        btnSettings.SetActive(true);
-        btnAbout.SetActive(true);
-    }
-
-    private void HideButtons()
-    {
-        textGameTitle.SetActive(false);
-        btnStart.SetActive(false);
-        btnContinue.SetActive(false);
-        btnSettings.SetActive(false);
-        btnAbout.SetActive(false);
     }
 
     private void OnDestroy()

@@ -835,6 +835,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackArrow
       objectReference: {fileID: 0}
+    - target: {fileID: 4509582494044611702, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0013885498
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509582494044611702, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.0649986
+      objectReference: {fileID: 0}
     - target: {fileID: 5270794429265275601, guid: 284eefa804bcc484291c75ba8238de26, type: 3}
       propertyPath: m_Type
       value: 0
