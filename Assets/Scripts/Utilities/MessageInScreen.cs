@@ -78,7 +78,6 @@ public class MessageInScreen : MonoBehaviour
     {
         StopAllCoroutines();
         onDialogCompleted += onCompleted;
-        currentDialogMessages = messages;
         currentDialog = StartCoroutine(WriteDialog(messages));
     }
 
@@ -106,6 +105,7 @@ public class MessageInScreen : MonoBehaviour
 
     private System.Collections.IEnumerator WriteDialog(Message[] messages)
     {
+        currentDialogMessages = messages;
         messageElement.SetActive(true);
         foreach (var message in messages)
         {
