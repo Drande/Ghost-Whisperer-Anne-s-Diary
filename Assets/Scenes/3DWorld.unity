@@ -9409,9 +9409,9 @@ MonoBehaviour:
     actions:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1164133715570499446, guid: 9c2653201ad32c2408099af26ff1e179, type: 3}
-          m_TargetAssemblyTypeName: MessageInScreen, Assembly-CSharp
-          m_MethodName: StartDialog
+        - m_Target: {fileID: 2537936126058909517, guid: e982f0895cc24b94aaff1c72600019bc, type: 3}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: LoadMemory
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 11400000, guid: 1225da5ff4e959641a5ae925f1cc8a1b, type: 2}
