@@ -61,6 +61,11 @@ public class MessageInScreen : MonoBehaviour
         messageElement.SetActive(false);
     }
 
+    public void StartDialog(DialogData dialog)
+    {
+        Instance.StartDialog(dialog.messages);
+    }
+
     public void StartDialog(Message[] messages)
     {
         currentDialog = StartCoroutine(WriteDialog(messages));
