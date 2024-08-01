@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47226e134f16084f9422da2a5d9909d, type: 3}
+  m_Name: Emma_Start
+  m_EditorClassIdentifier: 
+  messages:
+  - character: 1
+    message: Emma_Greeting
+    options: []
+  - character: 0
+    message: Anne_Introduction
+    options: []
+  - character: 1
+    message: Emma_Identity
+    options: []
+  - character: 0
+    message: Anne_Confusion
+    options: []
+  - character: 1
+    message: Emma_Memory
+    options: []
+  - character: 1
+    message: Emma_Fog
+    options: []
+  - character: 0
+    message: Anne_Surprise
+    options: []
+  - character: 1
+    message: Emma_Park
+    options: []
+  - character: 1
+    message: Emma_Promise
+    options: []
+  - character: 1
+    message: Emma_Abandonment
+    options: []
+  - character: 1
+    message: Emma_Death
+    options: []
+  - character: 0
+    message: Anne_Sympathy
+    options: []
+  - character: 1
+    message: Emma_Hope
+    options: []
+  - character: 1
+    message: Emma_AbandonmentAgain
+    options: []
+  - character: 0
+    message: Anne_Compassion
+    options: []
+  - character: 1
+    message: Emma_Pleas
+    options:
+    - label: Anne_FirstChoice_HelpEmma
+      value: 0
+    - label: Anne_SecondChoice_ExploreTheWorld
+      value: 1
+    - label: Anne_ThirdChoice_Clue
+      value: 2

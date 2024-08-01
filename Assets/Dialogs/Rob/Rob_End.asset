@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c47226e134f16084f9422da2a5d9909d, type: 3}
+  m_Name: Rob_End
+  m_EditorClassIdentifier: 
+  messages:
+  - character: 2
+    message: Rob_JoyRealization
+    options: []
+  - character: 0
+    message: Anne_DarknessLight
+    options: []
+  - character: 2
+    message: Rob_MotherSmile
+    options: []
+  - character: 2
+    message: Rob_Belief
+    options: []
+  - character: 0
+    message: Anne_PreciousMemories
+    options: []
+  - character: 2
+    message: Rob_Gratitude
+    options: []
+  - character: 0
+    message: Anne_Peace
+    options: []
+  - character: 2
+    message: Rob_ReadyToMoveOn
+    options: []
+  - character: 0
+    message: Anne_Farewell
+    options: []
+  - character: 2
+    message: Rob_Thanks
+    options: []
