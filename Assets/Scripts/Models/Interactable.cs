@@ -23,9 +23,8 @@ public class Interactable : MonoBehaviour, IInteractable
             var optionResult = onConfirm.FirstOrDefault(a => a.option == result);
             if (optionResult?.actions != default) {
                 optionResult.actions.Invoke();
-            } else {
-                action?.Invoke();
             }
+            action?.Invoke();
         });
     }
 }
