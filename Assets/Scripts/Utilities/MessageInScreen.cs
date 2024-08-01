@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 
 [System.Serializable]
 public class Character
 {
-    public string characterName;
+    public GameCharacters characterName;
     public Sprite characterSprite;
 }
 
 public class MessageInScreen : MonoBehaviour
 {
     public static MessageInScreen Instance { get; private set; }
-    [SerializeField] private List<Character> characterList = new List<Character>();
+    [SerializeField] private List<Character> characterList = new();
     [SerializeField] private GameObject messageElement;
     [SerializeField] private Image characterImage;
     [SerializeField] private TextMeshProUGUI characterText;
@@ -83,8 +82,9 @@ public class MessageInScreen : MonoBehaviour
 
     private void NotifyComplete(string result) {
         messageElement.SetActive(false);
-        onDialogCompleted?.Invoke(result);
+        var temp = onDialogCompleted; // Allow nested dialogs
         onDialogCompleted = null;
+        temp?.Invoke(result);
     }
 
     private System.Collections.IEnumerator WriteDialog(Message[] messages)
@@ -117,7 +117,7 @@ public class MessageInScreen : MonoBehaviour
         });
     }
 
-    private void UpdateCharacterImage(string characterName)
+    private void UpdateCharacterImage(GameCharacters characterName)
     {
         Character selectedCharacter = characterList.Find(character => character.characterName == characterName);
         if (selectedCharacter != null)
@@ -126,7 +126,7 @@ public class MessageInScreen : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Character not found in the list! " + characterName);
+            Debug.LogWarning("Character not found in the list! " + characterName.ToString());
         }
     }
 
@@ -134,7 +134,7 @@ public class MessageInScreen : MonoBehaviour
     {
         textWriter = StartCoroutine(Coroutines.WriteText(characterText, message, writeSpeed));
     }
-    private void UpdateCharacterNameTM(string characterName)
+    private void UpdateCharacterNameTM(GameCharacters characterName)
     {
         characterNameTM.text = CharacterNames.GetRealName(characterName);
     }

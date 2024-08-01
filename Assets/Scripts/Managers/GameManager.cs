@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
     public void LoadPuzzle() 
     {
         if(MessageInScreen.Instance.isActive) return;
-        MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, (_) => {            
+        MessageInScreen.Instance.StartDialog(ChapterOneDialogs.Start, (_) => {      
             LoadMinigame(GameScenes.PuzzleAssembly);
         });
     }

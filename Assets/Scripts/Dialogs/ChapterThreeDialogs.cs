@@ -2,18 +2,18 @@ public static class ChapterThreeDialogs
 {
     public static Message[] Start = new Message[]
     {
-        new(CharacterNames.Anne20yo, "Anne_Observation"),
-        new(CharacterNames.Millie, "Millie_Insight"),
-        new(CharacterNames.Anne20yo, "Anne_Question"),
-        new(CharacterNames.Millie, "Millie_Introduction"),
-        new(CharacterNames.Millie, "Millie_Mission"),
-        new(CharacterNames.Anne20yo, "Anne_Confusion"),
-        new(CharacterNames.Millie, "Millie_Instruction"),
-        new(CharacterNames.Millie, "Millie_Embrace"),
-        new(CharacterNames.Anne20yo, "Anne_FailureQuestion"),
-        new(CharacterNames.Millie, "Millie_FailureOutcome"),
-        new(CharacterNames.Anne20yo, "Anne_Resolve"),
-        new(CharacterNames.Millie, "Millie_Warning"),
-        new(CharacterNames.Millie, "Millie_Cost"),
+        new(GameCharacters.Anne, "Anne_Observation"),
+        new(GameCharacters.Millie, "Millie_Insight"),
+        new(GameCharacters.Anne, "Anne_Question"),
+        new(GameCharacters.Millie, "Millie_Introduction"),
+        new(GameCharacters.Millie, "Millie_Mission"),
+        new(GameCharacters.Anne, "Anne_Confusion"),
+        new(GameCharacters.Millie, "Millie_Instruction"),
+        new(GameCharacters.Millie, "Millie_Embrace"),
+        new(GameCharacters.Anne, "Anne_FailureQuestion"),
+        new(GameCharacters.Millie, "Millie_FailureOutcome"),
+        new(GameCharacters.Anne, "Anne_Resolve"),
+        new(GameCharacters.Millie, "Millie_Warning"),
+        new(GameCharacters.Millie, "Millie_Cost"),
     };
 }
