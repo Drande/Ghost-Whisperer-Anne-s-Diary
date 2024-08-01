@@ -597,7 +597,7 @@ MonoBehaviour:
   - characterName: 2
     characterSprite: {fileID: 21300000, guid: a30e2358c5e5ffc44a7faf4a4b781caf, type: 3}
   - characterName: 4
-    characterSprite: {fileID: 21300000, guid: 1767c7945fac186468c01bb8520e8195, type: 3}
+    characterSprite: {fileID: 21300000, guid: 8098d34b5ed40d9408abd7f5b9082b18, type: 3}
   - characterName: 3
     characterSprite: {fileID: 21300000, guid: bf76f9fef3818ce42af8b887baf3187c, type: 3}
   messageElement: {fileID: 6815244466092952245}
